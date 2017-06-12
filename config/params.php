@@ -6,7 +6,7 @@ return [
 
     'file' => [
         'extensions' => 'png, jpg',
-        'maxSize' => 10*1024*1024,
+        'maxSize' => 30*1024*1024,
         'maxFiles' => 50,
         'path' => dirname(__DIR__) . '/files',
     ],
@@ -14,26 +14,25 @@ return [
         'path' => 'image',
         'jpeg_quality' => 90,
         'watermark' => [
-            'enabled' => 1,
+            'enabled' => true,
+            'absolute' => true,
             'file' => '@webroot/img/watermark.png',
-            'x' => 50,
-            'y' => 70,
+            'x' => 25,
+            'y' => 20,
         ],
         'none' => '/img/photo-default.png?1',
         'size' => [
             'big' => [
-                'width' => 1024,
-                'height' => 768,
-            ],
-            'small' => [
-                'width' => 600,
-                'height' => 600,
+                'width' => 940,
+                'height' => 705,
             ],
             'cover' => [
                 'width' => 600,
                 'height' => 600,
-                'method' => 'fill',
-                'bg' => '#FFFFFF',
+                'method' => 'crop',
+                'watermark' => [
+                    'enabled' => false,
+                ],
             ],
         ],
     ],

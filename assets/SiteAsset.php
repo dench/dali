@@ -9,7 +9,7 @@ class SiteAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        '//fonts.googleapis.com/css?family=Open+Sans:400|Amiri',
+        '//fonts.googleapis.com/css?family=Open+Sans:400|Amiri|Merriweather:300',
         'css/site.css',
     ];
     public $js = [
