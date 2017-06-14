@@ -71,6 +71,9 @@ h2, .h2 {
 h3, .h3 {
   font-size: 14px;
 }
+h1.title {
+  margin: 0 0 20px 0;
+}
 
 .navbar-brand {
   font-size: 28px;
@@ -119,13 +122,19 @@ h3, .h3 {
   }
 }
 
+.cards {
+  margin: -6px;
+}
+
 .card {
   cursor: pointer;
+  padding: 6px;
   a {
     color: #000;
     text-decoration: none;
     &:hover {
       color: $secondary-color;
+      cursor: pointer;
     }
   }
   h1, h2, h3, .h1, .h2, .h3 {
@@ -138,16 +147,15 @@ h3, .h3 {
     color: #000;
     width: 100%;
     height: 100%;
-    margin: 0 -15px;
+    margin: -6px;
     padding: 20px 35px;
   }
   &:hover {
-    img {
-      @include transition(opacity 0.2s ease-in-out);
-      opacity: 0.3;
-    }
     .card-content {
       visibility: visible;
+      background: rgba(255,255,255,0.7);
+      @include transition(background 0.2s ease-in-out);
+      text-shadow: 0 0 1px #FFFFFF;
     }
   }
 }

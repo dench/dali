@@ -3,10 +3,11 @@ use dench\image\helpers\ImageHelper;
 
 /** @var $this yii\web\View */
 /** @var $model app\models\Page */
+/** @var $back string */
 
 ?>
 <div class="container">
-    <div class="back"><a href="#">&larr; Назад</a></div>
+    <?php if ($back) : ?><div class="back"><a href="<?= $back ?>">&larr; Назад</a></div><?php endif; ?>
     <h1><?= $model->h1 ?></h1>
     <?= $model->text ?>
 

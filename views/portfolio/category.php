@@ -6,10 +6,10 @@ use dench\image\helpers\ImageHelper;
 
 ?>
 <div class="container">
-    <h1><?= $model->h1 ?></h1>
+    <h1 class="title"><?= $model->h1 ?></h1>
     <?= $model->text ?>
 
-    <div class="row">
+    <div class="row cards">
         <?php foreach ($model->childs as $child) : ?>
             <div class="col-xs-6 col-md-4 card block-link">
                 <div class="card-content">

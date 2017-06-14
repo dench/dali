@@ -40,6 +40,9 @@ h2, .h2 {
 h3, .h3 {
   font-size: 14px; }
 
+h1.title {
+  margin: 0 0 20px 0; }
+
 .navbar-brand {
   font-size: 28px;
   line-height: 24px;
@@ -68,13 +71,18 @@ h3, .h3 {
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: transparent; }
 
+.cards {
+  margin: -6px; }
+
 .card {
-  cursor: pointer; }
+  cursor: pointer;
+  padding: 6px; }
   .card a {
     color: #000;
     text-decoration: none; }
     .card a:hover {
-      color: #E8AA98; }
+      color: #E8AA98;
+      cursor: pointer; }
   .card h1, .card h2, .card h3, .card .h1, .card .h2, .card .h3 {
     margin-top: 0; }
   .card-content {
@@ -84,16 +92,16 @@ h3, .h3 {
     color: #000;
     width: 100%;
     height: 100%;
-    margin: 0 -15px;
+    margin: -6px;
     padding: 20px 35px; }
-  .card:hover img {
-    -webkit-transition: opacity 0.2s ease-in-out;
-    -moz-transition: opacity 0.2s ease-in-out;
-    -o-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
-    opacity: 0.3; }
   .card:hover .card-content {
-    visibility: visible; }
+    visibility: visible;
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-transition: background 0.2s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+    text-shadow: 0 0 1px #FFFFFF; }
 
 .image {
   padding: 10px 5px; }
