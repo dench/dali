@@ -15,8 +15,8 @@ use dench\image\helpers\ImageHelper;
                 <div class="card-content">
                     <h3><a href="<?= \yii\helpers\Url::to(['portfolio/view', 'slug' => $child->slug]) ?>" class="card-photo"><?= $child->name ?></a></h3>
                 </div>
-                <?php if ($image = current($child->images)) : ?>
-                    <img src="<?= ImageHelper::thumb($image->id, 'cover') ?>" alt="<?= $image->alt ?>" class="img-responsive">
+                <?php if ($child->image) : ?>
+                    <img src="<?= ImageHelper::thumb($child->image->id, 'cover') ?>" alt="<?= $child->image->alt ?>" class="img-responsive">
                 <?php endif; ?>
             </div>
         <?php endforeach; ?>
