@@ -1,14 +1,13 @@
 <?php
-use yii\widgets\ListView;
-
 /** @var $this yii\web\View */
 /** @var $model app\models\Page */
 /** @var $dataProvider yii\data\ActiveDataProvider */
 
+use yii\widgets\ListView;
+
 ?>
 <div class="container">
-    <h1 class="title"><?= $model->h1 ?></h1>
-    <?= $model->text ?>
+    <h1 class="title"><?= $this->params['page']->h1 ?></h1>
 
     <?php
     echo ListView::widget([
@@ -20,4 +19,6 @@ use yii\widgets\ListView;
         ],
     ]);
     ?>
+
+    <?= $this->params['page']->text ?>
 </div>

@@ -45,26 +45,26 @@ SiteAsset::register($this);
                     'class' => 'navbar-nav navbar-center',
                 ],
                 'items' => [
-                    ['label' => 'Портфолио', 'url' => ['/portfolio'], 'items' => [
-                        ['label' => 'Оформление свадеб', 'url' => '/portfolio/oformlenie-svadeb'],
-                        ['label' => 'Оформление праздников', 'url' => '/portfolio/oformlenie-prazdnikov'],
-                        ['label' => 'Оформление мероприятий', 'url' => '/portfolio/oformlenie-meropriatij'],
-                        ['label' => 'Новогоднее оформление', 'url' => '/portfolio/novogodnee-oformlenie'],
-                        ['label' => 'Оформление витрин', 'url' => '/portfolio/oformlenie-vitrin'],
-                        ['label' => 'Букеты и цветочные композиции', 'url' => '/portfolio/bukety-i-cvetocnye-kompozicii'],
-                        ['label' => 'Озеленение', 'url' => '/portfolio/ozelenenie'],
+                    ['label' => 'Портфолио', 'url' => ['#'], 'items' => [
+                        ['label' => 'Оформление свадеб', 'url' => '/portfolio/svadby'],
+                        ['label' => 'Оформление праздников', 'url' => '/portfolio/prazdniki'],
+                        ['label' => 'Оформление мероприятий', 'url' => '/portfolio/meropriatia'],
+                        ['label' => 'Новогоднее оформление', 'url' => '/portfolio/novyj-god'],
+                        ['label' => 'Оформление витрин', 'url' => '/portfolio/vitriny'],
+                        ['label' => 'Букеты и цветочные композиции', 'url' => '/portfolio/bouquets-flower-compositions'],
+                        ['label' => 'Озеленение', 'url' => '/portfolio/greenery'],
                     ]],
-                    ['label' => 'Услуги', 'url' => ['/services'], 'items' => [
+                    ['label' => 'Услуги', 'url' => ['#'], 'items' => [
                         ['label' => 'Оформление свадеб', 'url' => '/services/oformlenie-svadeb'],
                         ['label' => 'Оформление праздников', 'url' => '/services/oformlenie-prazdnikov'],
                         ['label' => 'Оформление мероприятий', 'url' => '/services/oformlenie-meropriatij'],
                         ['label' => 'Новогоднее оформление', 'url' => '/services/novogodnee-oformlenie'],
                         ['label' => 'Оформление витрин', 'url' => '/services/oformlenie-vitrin'],
-                        ['label' => 'Букеты и цветочные композиции', 'url' => '/services/bukety-i-cvetocnye-kompozicii'],
+                        ['label' => 'Букеты и цветочные композиции', 'url' => '/services/bukety-cvetocnye-kompozicii'],
                         ['label' => 'Озеленение', 'url' => '/services/ozelenenie'],
                     ]],
-                    ['label' => 'Команда DaLi', 'url' => '/site/team'],
-                    ['label' => 'Контакты', 'url' => '/site/contacts'],
+                    ['label' => 'Команда DaLi', 'url' => '/about'],
+                    ['label' => 'Контакты', 'url' => '/contacts'],
                     ['label' => 'Блог', 'url' => ['/blog']],
                 ],
             ]);

@@ -20,11 +20,25 @@ return [
             'x' => 25,
             'y' => 20,
         ],
-        'none' => '/img/photo-default.png?1',
+        'none' => '/img/none.png',
         'size' => [
-            'big' => [
+            'landscape' => [
                 'width' => 940,
+                'height' => 625,
+                'method' => 'crop',
+            ],
+            'portrained' => [
+                'width' => 470,
                 'height' => 705,
+                'method' => 'crop',
+            ],
+            'fill' => [
+                'width' => 400,
+                'height' => 400,
+                'method' => 'fill',
+                'watermark' => [
+                    'enabled' => false,
+                ],
             ],
             'cover' => [
                 'width' => 600,

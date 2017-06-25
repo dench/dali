@@ -15,12 +15,25 @@ class PortfolioController extends Controller
     {
         $model = Page::viewPage($slug);
 
+        $dataProvider = new ActiveDataProvider([
+            'query' => $model->getChilds(),
+            'sort'=> [
+                'defaultOrder' => [
+                    'position' => SORT_ASC,
+                ],
+            ],
+            'pagination' => [
+                'pagesize' => 9,
+            ],
+        ]);
+
         return $this->render('category', [
             'model' => $model,
+            'dataProvider' => $dataProvider,
         ]);
     }
 
-    public function actionView($slug = null, $id = null)
+    public function actionView($slug = null)
     {
         $model = Page::viewPage($slug);
 

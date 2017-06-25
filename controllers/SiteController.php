@@ -42,6 +42,18 @@ class SiteController extends Controller
     }
 
     /**
+     * Displays page.
+     *
+     * @return string
+     */
+    public function actionPage($slug = null)
+    {
+        Page::viewPage($slug);
+
+        return $this->render('page');
+    }
+
+    /**
      * Displays contact page.
      *
      * @return string
@@ -57,15 +69,5 @@ class SiteController extends Controller
         return $this->render('contact', [
             'model' => $model,
         ]);
-    }
-
-    /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionAbout()
-    {
-        return $this->render('about');
     }
 }

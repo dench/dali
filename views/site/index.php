@@ -12,12 +12,14 @@ use yii\helpers\Url;
 
     <div class="row cards">
         <?php foreach ($items as $child) : ?>
-            <div class="col-xs-6 col-md-4 card block-link">
+            <div class="col-xs-12 col-md-4 card block-link">
                 <div class="card-content">
-                    <h3><a href="<?= \yii\helpers\Url::to(['portfolio/view', 'slug' => $child->slug]) ?>" class="card-photo"><?= $child->name ?></a></h3>
+                    <h3><a href="<?= Url::to(['portfolio/view', 'slug' => $child->slug]) ?>" class="card-photo"><?= $child->name ?></a></h3>
                 </div>
                 <?php if ($child->image) : ?>
                     <img src="<?= ImageHelper::thumb($child->image->id, 'cover') ?>" alt="<?= $child->image->alt ?>" class="img-responsive">
+                <?php else : ?>
+                    <img src="<?= Yii::$app->params['image']['none'] ?>" class="img-responsive img-none">
                 <?php endif; ?>
             </div>
         <?php endforeach; ?>

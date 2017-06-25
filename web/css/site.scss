@@ -1,6 +1,6 @@
-$primary-color: #8c8771;
-$secondary-color: #E8AA98;
-$secondary-color-light: #edd6cf;
+$primary-color: #000; //#8c8771;
+$secondary-color: #AAA; //#E8AA98;
+$secondary-color-light: #DDD; //#edd6cf;
 
 @mixin transition($params) {
   -webkit-transition: $params;
@@ -42,9 +42,9 @@ a {
 
 .site-logo {
   display: block;
-  padding: 30px 0;
+  padding: 20px 0 30px 0;
   img {
-    height: 100px;
+    height: 120px;
   }
 }
 
@@ -162,6 +162,10 @@ h1.title {
 
 .image {
   padding: 10px 5px;
+}
+
+.img-none {
+  border: 1px solid $secondary-color-light;
 }
 
 @media (min-width: 768px) {

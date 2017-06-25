@@ -13,9 +13,15 @@ use dench\image\helpers\ImageHelper;
 
     <?php if (empty($model->childs)) : ?>
         <?php foreach ($model->images as $image) : ?>
-            <div class="image <?= ($image->width/$image->height < 1) ? 'col-md-6' : 'col-md-12' ?>">
-                <img src="<?= ImageHelper::thumb($image->id, 'big') ?>" alt="<?= $image->alt ?>" class="img-responsive">
-            </div>
+            <?php if ($image->width/$image->height < 1) : ?>
+                <div class="image col-md-6">
+                    <img src="<?= ImageHelper::thumb($image->id, 'portrained') ?>" alt="<?= $image->alt ?>" class="img-responsive">
+                </div>
+            <?php else : ?>
+                <div class="image col-md-12">
+                    <img src="<?= ImageHelper::thumb($image->id, 'landscape') ?>" alt="<?= $image->alt ?>" class="img-responsive">
+                </div>
+            <?php endif; ?>
         <?php endforeach; ?>
     <?php endif; ?>
 </div>
