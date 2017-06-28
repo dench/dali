@@ -23,7 +23,7 @@ class PortfolioController extends Controller
                 ],
             ],
             'pagination' => [
-                'pagesize' => 9,
+                'defaultPageSize' => 9,
             ],
         ]);
 

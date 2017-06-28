@@ -72,7 +72,8 @@ h1.title {
   background-color: transparent; }
 
 .cards {
-  margin: -6px; }
+  margin: -6px;
+  overflow: hidden; }
 
 .card {
   cursor: pointer;

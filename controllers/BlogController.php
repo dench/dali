@@ -19,7 +19,7 @@ class BlogController extends \yii\web\Controller
                 ],
             ],
             'pagination' => [
-                'pagesize' => 9,
+                'defaultPageSize' => 9,
             ],
         ]);
 

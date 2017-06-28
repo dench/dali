@@ -34,6 +34,7 @@ $config = [
                 'portfolio/<slug:[0-9a-z\-]+>' => 'portfolio/category',
                 'services/<slug:[0-9a-z\-]+>' => 'site/page',
                 'project/<slug:[0-9a-z\-]+>' => 'portfolio/view',
+                'blog' => 'blog/index',
                 'blog/<slug:[0-9a-z\-]+>' => 'blog/view',
             ],
         ],
