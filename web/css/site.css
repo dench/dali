@@ -102,12 +102,17 @@ h1.title {
     -o-transition: background 0.2s ease-in-out;
     transition: background 0.2s ease-in-out;
     text-shadow: 0 0 1px #FFFFFF; }
+  .card:hover a:hover {
+    color: #000000; }
 
 .image {
   padding: 10px 5px; }
 
 .img-none {
   border: 1px solid #DDD; }
+
+.container img {
+  max-width: 100%; }
 
 @media (min-width: 768px) {
   .navbar {

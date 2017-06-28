@@ -33,4 +33,7 @@ div.required label.control-label:after {
 .kv-upload-progress {
   clear: both; }
 
+footer {
+  padding: 20px 0; }
+
 /*# sourceMappingURL=admin.css.map */

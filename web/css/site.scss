@@ -157,6 +157,9 @@ h1.title {
       @include transition(background 0.2s ease-in-out);
       text-shadow: 0 0 1px #FFFFFF;
     }
+    a:hover {
+      color: #000000;
+    }
   }
 }
 
@@ -166,6 +169,12 @@ h1.title {
 
 .img-none {
   border: 1px solid $secondary-color-light;
+}
+
+.container {
+  img {
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 768px) {

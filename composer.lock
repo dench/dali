@@ -412,16 +412,16 @@
         },
         {
             "name": "ckeditor/ckeditor",
-            "version": "4.7.0",
+            "version": "4.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ckeditor/ckeditor-releases.git",
-                "reference": "8edc5545364d3bd2b928852a7c270a044d1b3ea4"
+                "reference": "d62153e131ad4187700342fc044cf069c2fb5d8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/8edc5545364d3bd2b928852a7c270a044d1b3ea4",
-                "reference": "8edc5545364d3bd2b928852a7c270a044d1b3ea4",
+                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/d62153e131ad4187700342fc044cf069c2fb5d8a",
+                "reference": "d62153e131ad4187700342fc044cf069c2fb5d8a",
                 "shasum": ""
             },
             "type": "library",
@@ -449,7 +449,7 @@
                 "text",
                 "wysiwyg"
             ],
-            "time": "2017-05-25T16:15:26+00:00"
+            "time": "2017-06-28T14:36:40+00:00"
         },
         {
             "name": "dench/yii2-image",
@@ -457,12 +457,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dench/yii2-image.git",
-                "reference": "0af33c6d277da445adcba1145a668b41f9fb213c"
+                "reference": "7ed1b0171ce5b92215532e13c907bec22b0e049c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dench/yii2-image/zipball/0af33c6d277da445adcba1145a668b41f9fb213c",
-                "reference": "0af33c6d277da445adcba1145a668b41f9fb213c",
+                "url": "https://api.github.com/repos/dench/yii2-image/zipball/7ed1b0171ce5b92215532e13c907bec22b0e049c",
+                "reference": "7ed1b0171ce5b92215532e13c907bec22b0e049c",
                 "shasum": ""
             },
             "require": {
@@ -492,7 +492,7 @@
                 "image",
                 "yii2"
             ],
-            "time": "2017-06-18 20:08:26"
+            "time": "2017-06-28 18:33:44"
         },
         {
             "name": "dench/yii2-language",
@@ -542,12 +542,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dench/yii2-page.git",
-                "reference": "129ae2361169b81a2b47bee0ef6bdbd08b7511d3"
+                "reference": "d831da94fd9a1332213552e6ebea4dacba231518"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dench/yii2-page/zipball/129ae2361169b81a2b47bee0ef6bdbd08b7511d3",
-                "reference": "129ae2361169b81a2b47bee0ef6bdbd08b7511d3",
+                "url": "https://api.github.com/repos/dench/yii2-page/zipball/d831da94fd9a1332213552e6ebea4dacba231518",
+                "reference": "d831da94fd9a1332213552e6ebea4dacba231518",
                 "shasum": ""
             },
             "require": {
@@ -581,7 +581,7 @@
                 "page",
                 "yii2"
             ],
-            "time": "2017-06-25 19:53:43"
+            "time": "2017-06-28 18:34:40"
         },
         {
             "name": "dench/yii2-sortable",
