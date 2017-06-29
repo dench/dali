@@ -12,7 +12,7 @@ class BlogController extends \yii\web\Controller
         $model = Page::viewPage(13);
 
         $dataProvider = new ActiveDataProvider([
-            'query' => $model->getChilds(),
+            'query' => $model->getChilds()->where(['enabled' => 1]),
             'sort'=> [
                 'defaultOrder' => [
                     'position' => SORT_ASC,
