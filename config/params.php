@@ -22,14 +22,19 @@ return [
         ],
         'none' => '/img/none.png',
         'size' => [
+            'normal' => [
+                'width' => 800,
+                'height' => 600,
+                'method' => 'clip',
+            ],
             'landscape' => [
-                'width' => 940,
-                'height' => 625,
+                'width' => 800,
+                'height' => 532,
                 'method' => 'crop',
             ],
             'portrained' => [
-                'width' => 470,
-                'height' => 705,
+                'width' => 395,
+                'height' => 593,
                 'method' => 'crop',
             ],
             'fill' => [
@@ -41,8 +46,8 @@ return [
                 ],
             ],
             'cover' => [
-                'width' => 600,
-                'height' => 600,
+                'width' => 400,
+                'height' => 400,
                 'method' => 'crop',
                 'watermark' => [
                     'enabled' => false,

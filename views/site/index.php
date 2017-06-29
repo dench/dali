@@ -12,7 +12,7 @@ use yii\helpers\Url;
 
     <div class="row cards">
         <?php foreach ($items as $child) : ?>
-            <div class="col-xs-12 col-md-4 card block-link">
+            <div class="col-xs-12 col-sm-6 col-md-4 card block-link">
                 <div class="card-content">
                     <h3><a href="<?= Url::to(['portfolio/view', 'slug' => $child->slug]) ?>" class="card-photo"><?= $child->name ?></a></h3>
                 </div>
