@@ -12,7 +12,7 @@ return [
     ],
     'image' => [
         'path' => 'image',
-        'jpeg_quality' => 80,
+        'jpeg_quality' => 90,
         'watermark' => [
             'enabled' => true,
             'absolute' => true,
