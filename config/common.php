@@ -10,7 +10,7 @@ return [
     'name' => 'Site',
     'basePath' => dirname(__DIR__),
     'language' => 'ru',
-    'sourceLanguage' => 'ru',
+    'sourceLanguage' => 'en',
     'bootstrap' => ['log'],
     'modules' => [
         'admin' => [

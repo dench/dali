@@ -6,7 +6,7 @@ return [
 
     'file' => [
         'extensions' => 'png, jpg',
-        'maxSize' => 50*1024*1024,
+        'maxSize' => 25*1024*1024,
         'maxFiles' => 50,
         'path' => dirname(__DIR__) . '/files',
     ],
