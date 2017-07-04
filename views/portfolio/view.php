@@ -14,11 +14,11 @@ use dench\image\helpers\ImageHelper;
     <?php if (empty($model->childs)) : ?>
         <?php foreach ($model->images as $image) : ?>
             <?php if ($image->width/$image->height < 1) : ?>
-                <div class="image col-md-6">
+                <div class="image col-sm-6">
                     <img src="<?= ImageHelper::thumb($image->id, 'portrained') ?>" alt="<?= $image->alt ?>" class="img-responsive">
                 </div>
             <?php else : ?>
-                <div class="image col-md-12">
+                <div class="image col-sm-12">
                     <img src="<?= ImageHelper::thumb($image->id, 'landscape') ?>" alt="<?= $image->alt ?>" class="img-responsive">
                 </div>
             <?php endif; ?>
