@@ -166,6 +166,7 @@ h1.title {
 
 .image {
   padding: 10px 5px;
+  text-align: center;
 }
 
 .img-none {
@@ -233,6 +234,7 @@ h1.title {
   .container {
     img {
       height: auto !important;
+      display: inline-block;
     }
   }
 }
