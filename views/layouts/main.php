@@ -50,7 +50,7 @@ SiteAsset::register($this);
                         ['label' => 'Оформление свадеб', 'url' => '/portfolio/wedding'],
                         ['label' => 'Оформление праздников', 'url' => '/portfolio/celebration'],
                         ['label' => 'Оформление мероприятий', 'url' => '/portfolio/events'],
-                        ['label' => 'Новогоднее оформление', 'url' => '/project/new-year'],
+                        ['label' => 'Новогоднее оформление', 'url' => '/portfolio/new-year'],
                         ['label' => 'Оформление витрин', 'url' => '/portfolio/shop-window'],
                         ['label' => 'Озеленение', 'url' => '/portfolio/landscaping'],
                     ]],

@@ -31,6 +31,7 @@ $config = [
                 '<action:(contacts)>' => 'site/<action>',
                 '<slug:about>' => 'site/page',
                 'image/<size:[0-9a-z\-]+>/<name>.<extension:[a-z]+>' => 'image/default/index',
+                'portfolio/<slug:new-year>' => 'portfolio/view',
                 'portfolio/' => 'portfolio/index',
                 'portfolio/<slug:[0-9a-z\-]+>' => 'portfolio/category',
                 'services/' => 'services/index',
