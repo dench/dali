@@ -24,7 +24,8 @@ a {
 footer {
   margin-top: -100px;
   text-align: center;
-  line-height: 100px; }
+  line-height: 2;
+  padding: 20px 0; }
 
 h1, .h1, h2, .h2, h3, .h3 {
   font-family: 'Lora', serif;

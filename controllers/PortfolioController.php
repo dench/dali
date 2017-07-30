@@ -11,12 +11,34 @@ use yii\web\NotFoundHttpException;
 
 class PortfolioController extends Controller
 {
+    public function actionIndex()
+    {
+        $model = Page::viewPage(2);
+
+        $dataProvider = new ActiveDataProvider([
+            'query' => $model->getChilds()->where(['enabled' => 1]),
+            'sort'=> [
+                'defaultOrder' => [
+                    'position' => SORT_ASC,
+                ],
+            ],
+            'pagination' => [
+                'defaultPageSize' => 9,
+            ],
+        ]);
+
+        return $this->render('index', [
+            'model' => $model,
+            'dataProvider' => $dataProvider,
+        ]);
+    }
+
     public function actionCategory($slug)
     {
         $model = Page::viewPage($slug);
 
         $dataProvider = new ActiveDataProvider([
-            'query' => $model->getChilds(),
+            'query' => $model->getChilds()->where(['enabled' => 1]),
             'sort'=> [
                 'defaultOrder' => [
                     'position' => SORT_ASC,

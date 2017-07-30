@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\models\Page;
 use Yii;
+use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use app\models\ContactForm;
 
@@ -51,6 +52,33 @@ class SiteController extends Controller
         Page::viewPage($slug);
 
         return $this->render('page');
+    }
+
+    /**
+     * Displays page.
+     *
+     * @return string
+     */
+    public function actionServices()
+    {
+        $model = Page::viewPage(3);
+
+        $dataProvider = new ActiveDataProvider([
+            'query' => $model->getChilds(),
+            'sort'=> [
+                'defaultOrder' => [
+                    'position' => SORT_ASC,
+                ],
+            ],
+            'pagination' => [
+                'defaultPageSize' => 9,
+            ],
+        ]);
+
+        return $this->render('services', [
+            'model' => $model,
+            'dataProvider' => $dataProvider,
+        ]);
     }
 
     /**

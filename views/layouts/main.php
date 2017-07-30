@@ -46,7 +46,7 @@ SiteAsset::register($this);
                     'class' => 'navbar-nav navbar-center',
                 ],
                 'items' => [
-                    ['label' => 'Портфолио', 'url' => ['#'], 'items' => [
+                    ['label' => 'Портфолио', 'url' => ['/portfolio'], 'items' => [
                         ['label' => 'Оформление свадеб', 'url' => '/portfolio/svadby'],
                         ['label' => 'Оформление праздников', 'url' => '/portfolio/prazdniki'],
                         ['label' => 'Оформление мероприятий', 'url' => '/portfolio/meropriatia'],
@@ -54,7 +54,7 @@ SiteAsset::register($this);
                         ['label' => 'Оформление витрин', 'url' => '/portfolio/vitriny'],
                         ['label' => 'Озеленение', 'url' => '/portfolio/greenery'],
                     ]],
-                    ['label' => 'Услуги', 'url' => ['#'], 'items' => [
+                    ['label' => 'Услуги', 'url' => ['/services'], 'items' => [
                         ['label' => 'Оформление свадеб', 'url' => '/services/oformlenie-svadeb'],
                         ['label' => 'Оформление праздников', 'url' => '/services/oformlenie-prazdnikov'],
                         ['label' => 'Оформление мероприятий', 'url' => '/services/oformlenie-meropriatij'],
@@ -76,6 +76,9 @@ SiteAsset::register($this);
 </div>
 <footer class="footer">
     <div class="container">
+        <div>
+            <?= Html::a('Портфолио', ['/portfolio']) ?> | <?= Html::a('Услуги', ['/services']) ?>
+        </div>
         © Da-Li 2017
     </div>
 </footer>
