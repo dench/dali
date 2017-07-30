@@ -48,7 +48,7 @@ SiteAsset::register($this);
                 'items' => [
                     ['label' => 'Портфолио', 'url' => ['/portfolio'], 'items' => [
                         ['label' => 'Оформление свадеб', 'url' => '/portfolio/wedding'],
-                        ['label' => 'Оформление праздников', 'url' => '/portfolio/holidays'],
+                        ['label' => 'Оформление праздников', 'url' => '/portfolio/celebration'],
                         ['label' => 'Оформление мероприятий', 'url' => '/portfolio/events'],
                         ['label' => 'Новогоднее оформление', 'url' => '/project/new-year'],
                         ['label' => 'Оформление витрин', 'url' => '/portfolio/shop-window'],
@@ -56,7 +56,7 @@ SiteAsset::register($this);
                     ]],
                     ['label' => 'Услуги', 'url' => ['/services'], 'items' => [
                         ['label' => 'Оформление свадеб', 'url' => '/services/wedding-decoration'],
-                        ['label' => 'Оформление праздников', 'url' => '/services/holidays-decoration'],
+                        ['label' => 'Оформление праздников', 'url' => '/services/celebration-decoration'],
                         ['label' => 'Оформление мероприятий', 'url' => '/services/events-decoration'],
                         ['label' => 'Новогоднее оформление', 'url' => '/services/new-year-decoration'],
                         ['label' => 'Оформление витрин', 'url' => '/services/shop-window-decoration'],
