@@ -51,7 +51,8 @@ h1.title {
 .navbar-brand {
   font-size: 28px;
   line-height: 24px;
-  font-family: "Amiri", serif; }
+  font-family: "Amiri", serif;
+  color: #000; }
 
 .navbar-nav > li > a {
   color: #000;
