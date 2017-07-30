@@ -81,6 +81,7 @@ SiteAsset::register($this);
         © Da-Li 2017
     </div>
 </footer>
+<?= $this->render('_counters') ?>
 <?php $this->endBody() ?>
 </body>
 </html>
