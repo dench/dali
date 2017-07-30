@@ -9,7 +9,6 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use app\assets\CommonAsset;
 
-CommonAsset::register($this);
 SiteAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
