@@ -60,7 +60,7 @@ SiteAsset::register($this);
                         ['label' => 'Оформление мероприятий', 'url' => '/services/events-decoration'],
                         ['label' => 'Новогоднее оформление', 'url' => '/services/new-year-decoration'],
                         ['label' => 'Оформление витрин', 'url' => '/services/shop-window-decoration'],
-                        ['label' => 'Озеленение', 'url' => '/services/phytodesign-decoration'],
+                        ['label' => 'Озеленение', 'url' => '/services/phyto-decoration'],
                     ]],
                     ['label' => 'Команда DaLi', 'url' => '/about'],
                     ['label' => 'Контакты', 'url' => '/contacts'],
