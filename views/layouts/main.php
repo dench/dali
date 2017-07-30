@@ -52,7 +52,7 @@ SiteAsset::register($this);
                         ['label' => 'Оформление мероприятий', 'url' => '/portfolio/events'],
                         ['label' => 'Новогоднее оформление', 'url' => '/portfolio/new-year'],
                         ['label' => 'Оформление витрин', 'url' => '/portfolio/shop-window'],
-                        ['label' => 'Озеленение', 'url' => '/portfolio/landscaping'],
+                        ['label' => 'Озеленение', 'url' => '/portfolio/phytodesign'],
                     ]],
                     ['label' => 'Услуги', 'url' => ['/services'], 'items' => [
                         ['label' => 'Оформление свадеб', 'url' => '/services/wedding-decoration'],
@@ -60,7 +60,7 @@ SiteAsset::register($this);
                         ['label' => 'Оформление мероприятий', 'url' => '/services/events-decoration'],
                         ['label' => 'Новогоднее оформление', 'url' => '/services/new-year-decoration'],
                         ['label' => 'Оформление витрин', 'url' => '/services/shop-window-decoration'],
-                        ['label' => 'Озеленение', 'url' => '/services/landscaping-decoration'],
+                        ['label' => 'Озеленение', 'url' => '/services/phytodesign-decoration'],
                     ]],
                     ['label' => 'Команда DaLi', 'url' => '/about'],
                     ['label' => 'Контакты', 'url' => '/contacts'],
