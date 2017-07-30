@@ -1,6 +1,8 @@
 $primary-color: #000; //#8c8771;
 $secondary-color: #AAA; //#E8AA98;
 $secondary-color-light: #DDD; //#edd6cf;
+$link-color: #428bca;
+$link-over-color: #2a6496;
 
 @mixin transition($params) {
   -webkit-transition: $params;
@@ -28,10 +30,10 @@ body {
 }
 
 a {
-  color: $primary-color;
+  color: $link-color;
   &:hover,
   &:focus {
-    color: $secondary-color;
+    color: $link-over-color;
   }
 }
 
@@ -53,6 +55,13 @@ footer {
   text-align: center;
   line-height: 2;
   padding: 20px 0;
+  a {
+    color: $primary-color;
+    &:hover,
+    &:focus {
+      color: $secondary-color;
+    }
+  }
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
@@ -85,9 +94,11 @@ h1.title {
 .navbar-nav {
   > li {
     > a {
+      color: $primary-color;
       text-transform: uppercase;
       &:hover,
       &:focus {
+        color: $secondary-color;
         background-color: transparent;
       }
     }
