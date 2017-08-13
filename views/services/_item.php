@@ -8,7 +8,7 @@ use yii\helpers\Url;
 ?>
 <div class="col-xs-12  col-sm-6 col-md-4 card block-link">
     <div class="card-content">
-        <h3><a href="<?= Url::to(['services/view', 'slug' => $model->slug]) ?>" class="card-photo"><?= $model->name ?></a></h3>
+        <h2><a href="<?= Url::to(['services/view', 'slug' => $model->slug]) ?>" class="card-photo"><?= $model->name ?></a></h2>
         <small><?= $model->description ?></small>
     </div>
     <?php if ($model->image) : ?>
