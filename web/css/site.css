@@ -144,10 +144,12 @@ h1.title {
   border: 1px solid #DDD; }
 
 .container img {
-  max-width: 100%;
-  margin: 4px 2px; }
+  max-width: 100%; }
 .container p {
   margin: 0 0 15px; }
+
+.blog img {
+  margin: 4px 2px; }
 
 @media (min-width: 768px) {
   .navbar {
