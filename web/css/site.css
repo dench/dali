@@ -75,7 +75,15 @@ h1.title {
       text-decoration: none;
       color: #AAA;
       background-color: transparent; }
+  .dropdown-menu .active > a {
+    color: #AAA;
+    background: none; }
+    .dropdown-menu .active > a:hover, .dropdown-menu .active > a:focus {
+      color: #AAA;
+      background: none; }
 
+.nav li.active > a {
+  color: #AAA; }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: transparent; }
 
@@ -114,7 +122,21 @@ h1.title {
   .card:hover a:hover {
     color: #000000; }
 
+.breadcrumb {
+  background: none;
+  margin-bottom: 0;
+  margin-top: -20px; }
+  .breadcrumb a {
+    color: #000; }
+  .breadcrumb > li + li:before {
+    font-family: 'Glyphicons Halflings', sans-serif;
+    content: "\e080";
+    font-size: 7px;
+    vertical-align: middle;
+    padding: 0 6px 0 4px; }
+
 .image {
+  display: block;
   padding: 10px 5px;
   text-align: center; }
 
@@ -141,6 +163,12 @@ h1.title {
     padding-right: 0;
     padding-left: 0; } }
 @media (max-width: 769px) {
+  .images {
+    margin: 0 -15px; }
+
+  .image {
+    padding: 5px; }
+
   .site-logo {
     display: none; }
 

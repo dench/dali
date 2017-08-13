@@ -13,10 +13,13 @@ use yii\widgets\ListView;
     <?php
     echo ListView::widget([
         'dataProvider' => $dataProvider,
-        'itemView' => '_item',
+        'itemView' => '_item_category',
         'layout' => "<div class=\"row cards\">{items}</div>\n<div class=\"clear-pager text-center\">{pager}</div>",
         'emptyTextOptions' => [
             'class' => 'alert alert-danger',
+        ],
+        'viewParams' => [
+            'hello' => 'dench',
         ],
     ]);
     ?>

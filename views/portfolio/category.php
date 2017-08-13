@@ -5,9 +5,14 @@ use yii\widgets\ListView;
 /** @var $model app\models\Page */
 /** @var $dataProvider yii\data\ActiveDataProvider */
 
+$this->params['breadcrumbs'][] = [
+    'label' => 'Портфолио',
+    'url' => ['portfolio/index'],
+];
+$this->params['breadcrumbs'][] = '';
 ?>
 <div class="container">
-    <h1 class="title"><?= $model->h1 ?></h1>
+    <h1><?= $model->h1 ?></h1>
     <?= $model->text ?>
 
     <?php

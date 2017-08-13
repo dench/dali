@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad55db81092e8e6a1e4caed606f14e22",
+    "content-hash": "d2e7cf65fcea5adba989f171b220f8c8",
     "packages": [
         {
             "name": "2amigos/yii2-ckeditor-widget",
@@ -200,6 +200,52 @@
                 "jquery",
                 "mask",
                 "plugins"
+            ]
+        },
+        {
+            "name": "bower-asset/photoswipe",
+            "version": "v4.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dimsemenov/PhotoSwipe.git",
+                "reference": "b6fdb82ed0b5b635c0943098f3046581a02ead77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dimsemenov/PhotoSwipe/zipball/b6fdb82ed0b5b635c0943098f3046581a02ead77",
+                "reference": "b6fdb82ed0b5b635c0943098f3046581a02ead77",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "dist/photoswipe.js",
+                    "dist/photoswipe.css",
+                    "dist/photoswipe-ui-default.js",
+                    "dist/default-skin/default-skin.css",
+                    "dist/default-skin/default-skin.png",
+                    "dist/default-skin/default-skin.svg",
+                    "dist/default-skin/preloader.gif"
+                ],
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "node_modules",
+                    "bower_components",
+                    "test",
+                    "tests",
+                    "website"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Touch-friendly image gallery for mobile and desktop. Without dependencies.",
+            "keywords": [
+                "gallery",
+                "image",
+                "lightbox",
+                "swipe",
+                "touch"
             ]
         },
         {
@@ -457,12 +503,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dench/yii2-image.git",
-                "reference": "3a80df5197eb2642aff8a9baa493a66a29f2d80d"
+                "reference": "64d559c32ad59cc89cc3d42bffbca3fe282d2679"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dench/yii2-image/zipball/3a80df5197eb2642aff8a9baa493a66a29f2d80d",
-                "reference": "3a80df5197eb2642aff8a9baa493a66a29f2d80d",
+                "url": "https://api.github.com/repos/dench/yii2-image/zipball/64d559c32ad59cc89cc3d42bffbca3fe282d2679",
+                "reference": "64d559c32ad59cc89cc3d42bffbca3fe282d2679",
                 "shasum": ""
             },
             "require": {
@@ -492,7 +538,7 @@
                 "image",
                 "yii2"
             ],
-            "time": "2017-07-08 11:46:46"
+            "time": "2017-08-11 09:05:07"
         },
         {
             "name": "dench/yii2-language",
@@ -500,15 +546,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dench/yii2-language.git",
-                "reference": "3388b866af9f017ac56c16649ccfcf4b0ef2f9d4"
+                "reference": "0d8fabed43e9a0ea5897934133fa930e132b504c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dench/yii2-language/zipball/3388b866af9f017ac56c16649ccfcf4b0ef2f9d4",
-                "reference": "3388b866af9f017ac56c16649ccfcf4b0ef2f9d4",
+                "url": "https://api.github.com/repos/dench/yii2-language/zipball/0d8fabed43e9a0ea5897934133fa930e132b504c",
+                "reference": "0d8fabed43e9a0ea5897934133fa930e132b504c",
                 "shasum": ""
             },
             "require": {
+                "dench/yii2-sortable": "@dev",
                 "omgdef/yii2-multilingual-behavior": "*",
                 "yiisoft/yii2": "*"
             },
@@ -534,7 +581,7 @@
                 "language",
                 "yii2"
             ],
-            "time": "2017-06-16 19:57:12"
+            "time": "2017-08-11 09:05:37"
         },
         {
             "name": "dench/yii2-page",
@@ -542,12 +589,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dench/yii2-page.git",
-                "reference": "3e46fd726127d457135830438d3c002e7008594d"
+                "reference": "624fd0f373a7e172b152ea6ea2b09ec58378c87e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dench/yii2-page/zipball/3e46fd726127d457135830438d3c002e7008594d",
-                "reference": "3e46fd726127d457135830438d3c002e7008594d",
+                "url": "https://api.github.com/repos/dench/yii2-page/zipball/624fd0f373a7e172b152ea6ea2b09ec58378c87e",
+                "reference": "624fd0f373a7e172b152ea6ea2b09ec58378c87e",
                 "shasum": ""
             },
             "require": {
@@ -581,7 +628,7 @@
                 "page",
                 "yii2"
             ],
-            "time": "2017-07-22 17:11:58"
+            "time": "2017-08-11 09:06:13"
         },
         {
             "name": "dench/yii2-sortable",
@@ -896,16 +943,16 @@
         },
         {
             "name": "kartik-v/yii2-widget-select2",
-            "version": "v2.0.9",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-select2.git",
-                "reference": "03f202e9e2415f4c84e93a64074d85677fd0cc51"
+                "reference": "a129c6663078fe0ad14cde2a5d0afd071c7608e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/03f202e9e2415f4c84e93a64074d85677fd0cc51",
-                "reference": "03f202e9e2415f4c84e93a64074d85677fd0cc51",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/a129c6663078fe0ad14cde2a5d0afd071c7608e9",
+                "reference": "a129c6663078fe0ad14cde2a5d0afd071c7608e9",
                 "shasum": ""
             },
             "require": {
@@ -914,7 +961,7 @@
             "type": "yii2-extension",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.1.x-dev"
                 }
             },
             "autoload": {
@@ -945,7 +992,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2017-04-12T09:00:24+00:00"
+            "time": "2017-08-07T18:12:36+00:00"
         },
         {
             "name": "omgdef/yii2-multilingual-behavior",

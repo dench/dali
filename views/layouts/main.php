@@ -8,6 +8,7 @@ use yii\bootstrap\NavBar;
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use app\assets\CommonAsset;
+use yii\widgets\Breadcrumbs;
 
 SiteAsset::register($this);
 ?>
@@ -46,30 +47,49 @@ SiteAsset::register($this);
                 ],
                 'items' => [
                     ['label' => 'Портфолио', 'url' => ['/portfolio'], 'items' => [
-                        ['label' => 'Оформление свадеб', 'url' => '/portfolio/wedding'],
-                        ['label' => 'Оформление праздников', 'url' => '/portfolio/celebration'],
-                        ['label' => 'Оформление мероприятий', 'url' => '/portfolio/events'],
-                        ['label' => 'Новогоднее оформление', 'url' => '/portfolio/new-year'],
-                        ['label' => 'Оформление витрин', 'url' => '/portfolio/shop-window'],
-                        ['label' => 'Озеленение', 'url' => '/portfolio/phytodesign'],
-                    ]],
+                        ['label' => 'Оформление свадеб', 'url' => '/portfolio/wedding', 'active' => (Yii::$app->request->get('slug') == 'wedding')],
+                        ['label' => 'Оформление праздников', 'url' => '/portfolio/celebration', 'active' => (Yii::$app->request->get('slug') == 'celebration')],
+                        ['label' => 'Оформление мероприятий', 'url' => '/portfolio/events', 'active' => (Yii::$app->request->get('slug') == 'events')],
+                        ['label' => 'Новогоднее оформление', 'url' => '/portfolio/new-year', 'active' => (Yii::$app->request->get('slug') == 'new-year')],
+                        ['label' => 'Оформление витрин', 'url' => '/portfolio/shop-window', 'active' => (Yii::$app->request->get('slug') == 'shop-window')],
+                        ['label' => 'Озеленение', 'url' => '/portfolio/phytodesign', 'active' => (Yii::$app->request->get('slug') == 'phytodesign')],
+                    ], 'active' => (Yii::$app->controller->id == 'portfolio')],
                     ['label' => 'Услуги', 'url' => ['/services'], 'items' => [
-                        ['label' => 'Оформление свадеб', 'url' => '/services/wedding-decoration'],
-                        ['label' => 'Оформление праздников', 'url' => '/services/celebration-decoration'],
-                        ['label' => 'Оформление мероприятий', 'url' => '/services/events-decoration'],
-                        ['label' => 'Новогоднее оформление', 'url' => '/services/new-year-decoration'],
-                        ['label' => 'Оформление витрин', 'url' => '/services/shop-window-decoration'],
-                        ['label' => 'Озеленение', 'url' => '/services/phyto-decoration'],
-                    ]],
-                    ['label' => 'Команда DaLi', 'url' => '/about'],
-                    ['label' => 'Контакты', 'url' => '/contacts'],
-                    ['label' => 'Блог', 'url' => ['/blog']],
+                        ['label' => 'Оформление свадеб', 'url' => '/services/wedding-decoration', 'active' => (Yii::$app->request->get('slug') == 'wedding-decoration')],
+                        ['label' => 'Оформление праздников', 'url' => '/services/celebration-decoration', 'active' => (Yii::$app->request->get('slug') == 'celebration-decoration')],
+                        ['label' => 'Оформление мероприятий', 'url' => '/services/events-decoration', 'active' => (Yii::$app->request->get('slug') == 'events-decoration')],
+                        ['label' => 'Новогоднее оформление', 'url' => '/services/new-year-decoration', 'active' => (Yii::$app->request->get('slug') == 'new-year-decoration')],
+                        ['label' => 'Оформление витрин', 'url' => '/services/shop-window-decoration', 'active' => (Yii::$app->request->get('slug') == 'shop-window-decoration')],
+                        ['label' => 'Озеленение', 'url' => '/services/phyto-decoration', 'active' => (Yii::$app->request->get('slug') == 'phyto-decoration')],
+                    ], 'active' => (Yii::$app->controller->id == 'services')],
+                    ['label' => 'Команда DaLi', 'url' => '/about', 'active' => (Yii::$app->request->get('slug') == 'about')],
+                    ['label' => 'Контакты', 'url' => '/contacts', 'active' => (Yii::$app->controller->action->id == 'contacts')],
+                    ['label' => 'Блог', 'url' => ['/blog'], 'active' => (Yii::$app->controller->id == 'blog')],
                 ],
             ]);
             NavBar::end();
             ?>
         </div>
     </header>
+
+    <?php
+    if (isset($this->params['breadcrumbs'])) {
+        echo Html::tag(
+            'div',
+            Breadcrumbs::widget([
+                'links' => $this->params['breadcrumbs'],
+                'homeLink' => [
+                    'label' => Yii::$app->name,
+                    'url' => Yii::$app->homeUrl,
+                ],
+                'options' => [
+                    'class' => 'breadcrumb container',
+                ]
+            ]), [
+            'class' => 'bg-grey'
+        ]);
+    }
+    ?>
 
     <?= $content ?>
 </div>
@@ -78,7 +98,7 @@ SiteAsset::register($this);
         <div>
             <?= Html::a('Портфолио', ['/portfolio']) ?> | <?= Html::a('Услуги', ['/services']) ?>
         </div>
-        © Da-Li 2017
+        © <?= Yii::$app->name ?> 2017
     </div>
 </footer>
 <?= $this->render('_counters') ?>

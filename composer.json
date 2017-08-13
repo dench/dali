@@ -26,7 +26,8 @@
         "voskobovich/yii2-linker-behavior": "^4.0",
         "kartik-v/yii2-widget-fileinput": "@dev",
         "kartik-v/bootstrap-fileinput": "4.3.8",
-        "bower-asset/twbs/bootstrap-sass": "*"
+        "bower-asset/twbs/bootstrap-sass": "*",
+        "bower-asset/photoswipe": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
