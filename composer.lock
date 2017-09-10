@@ -145,16 +145,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.3.7",
+            "version": "3.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/Inputmask.git",
-                "reference": "9835731cb78cac749734d94a1cb5bd70da4d3b10"
+                "reference": "791d84990c4a98df1597e9d155be53a3725805dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/Inputmask/zipball/9835731cb78cac749734d94a1cb5bd70da4d3b10",
-                "reference": "9835731cb78cac749734d94a1cb5bd70da4d3b10",
+                "url": "https://api.github.com/repos/RobinHerbots/Inputmask/zipball/791d84990c4a98df1597e9d155be53a3725805dd",
+                "reference": "791d84990c4a98df1597e9d155be53a3725805dd",
                 "shasum": ""
             },
             "require": {
@@ -458,16 +458,16 @@
         },
         {
             "name": "ckeditor/ckeditor",
-            "version": "4.7.1",
+            "version": "4.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ckeditor/ckeditor-releases.git",
-                "reference": "d62153e131ad4187700342fc044cf069c2fb5d8a"
+                "reference": "e1db4f159d7743c076e464ce90dc8b421ebc8ef0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/d62153e131ad4187700342fc044cf069c2fb5d8a",
-                "reference": "d62153e131ad4187700342fc044cf069c2fb5d8a",
+                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/e1db4f159d7743c076e464ce90dc8b421ebc8ef0",
+                "reference": "e1db4f159d7743c076e464ce90dc8b421ebc8ef0",
                 "shasum": ""
             },
             "type": "library",
@@ -495,7 +495,7 @@
                 "text",
                 "wysiwyg"
             ],
-            "time": "2017-06-28T14:36:40+00:00"
+            "time": "2017-08-17T17:01:28+00:00"
         },
         {
             "name": "dench/yii2-image",
@@ -503,12 +503,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dench/yii2-image.git",
-                "reference": "64d559c32ad59cc89cc3d42bffbca3fe282d2679"
+                "reference": "8a93ec659525dcd5334b245354fbb3720cc67a6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dench/yii2-image/zipball/64d559c32ad59cc89cc3d42bffbca3fe282d2679",
-                "reference": "64d559c32ad59cc89cc3d42bffbca3fe282d2679",
+                "url": "https://api.github.com/repos/dench/yii2-image/zipball/8a93ec659525dcd5334b245354fbb3720cc67a6c",
+                "reference": "8a93ec659525dcd5334b245354fbb3720cc67a6c",
                 "shasum": ""
             },
             "require": {
@@ -538,7 +538,7 @@
                 "image",
                 "yii2"
             ],
-            "time": "2017-08-11 09:05:07"
+            "time": "2017-08-15 08:55:30"
         },
         {
             "name": "dench/yii2-language",
@@ -546,12 +546,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dench/yii2-language.git",
-                "reference": "0d8fabed43e9a0ea5897934133fa930e132b504c"
+                "reference": "386e7500109acac1f78d0daa66ecb1a3193c75ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dench/yii2-language/zipball/0d8fabed43e9a0ea5897934133fa930e132b504c",
-                "reference": "0d8fabed43e9a0ea5897934133fa930e132b504c",
+                "url": "https://api.github.com/repos/dench/yii2-language/zipball/386e7500109acac1f78d0daa66ecb1a3193c75ef",
+                "reference": "386e7500109acac1f78d0daa66ecb1a3193c75ef",
                 "shasum": ""
             },
             "require": {
@@ -581,7 +581,7 @@
                 "language",
                 "yii2"
             ],
-            "time": "2017-08-11 09:05:37"
+            "time": "2017-08-15 08:04:53"
         },
         {
             "name": "dench/yii2-page",
@@ -589,12 +589,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dench/yii2-page.git",
-                "reference": "624fd0f373a7e172b152ea6ea2b09ec58378c87e"
+                "reference": "64e5c9b047cfc631ad4a103776b9b55fea925a24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dench/yii2-page/zipball/624fd0f373a7e172b152ea6ea2b09ec58378c87e",
-                "reference": "624fd0f373a7e172b152ea6ea2b09ec58378c87e",
+                "url": "https://api.github.com/repos/dench/yii2-page/zipball/64e5c9b047cfc631ad4a103776b9b55fea925a24",
+                "reference": "64e5c9b047cfc631ad4a103776b9b55fea925a24",
                 "shasum": ""
             },
             "require": {
@@ -628,7 +628,7 @@
                 "page",
                 "yii2"
             ],
-            "time": "2017-08-11 09:06:13"
+            "time": "2017-08-14 17:28:28"
         },
         {
             "name": "dench/yii2-sortable",
@@ -1484,29 +1484,31 @@
         },
         {
             "name": "fzaninotto/faker",
-            "version": "v1.6.0",
+            "version": "v1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "44f9a286a04b80c76a4e5fb7aad8bb539b920123"
+                "reference": "d3ed4cc37051c1ca52d22d76b437d14809fc7e0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/44f9a286a04b80c76a4e5fb7aad8bb539b920123",
-                "reference": "44f9a286a04b80c76a4e5fb7aad8bb539b920123",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/d3ed4cc37051c1ca52d22d76b437d14809fc7e0d",
+                "reference": "d3ed4cc37051c1ca52d22d76b437d14809fc7e0d",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.3|^7.0"
+                "php": "^5.3.3 || ^7.0"
             },
             "require-dev": {
                 "ext-intl": "*",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~1.5"
+                "phpunit/phpunit": "^4.0 || ^5.0",
+                "squizlabs/php_codesniffer": "^1.5"
             },
             "type": "library",
             "extra": {
-                "branch-alias": []
+                "branch-alias": {
+                    "dev-master": "1.8-dev"
+                }
             },
             "autoload": {
                 "psr-4": {
@@ -1528,7 +1530,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2016-04-29T12:21:54+00:00"
+            "time": "2017-08-15T16:48:10+00:00"
         },
         {
             "name": "phpspec/php-diff",
@@ -1570,16 +1572,16 @@
         },
         {
             "name": "yiisoft/yii2-debug",
-            "version": "2.0.9",
+            "version": "2.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "647be6c9d48dc2f3c2e2f33b9eba0a4ca78abde9"
+                "reference": "372fbf0d47303b7d68275d6720935e5116915418"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/647be6c9d48dc2f3c2e2f33b9eba0a4ca78abde9",
-                "reference": "647be6c9d48dc2f3c2e2f33b9eba0a4ca78abde9",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/372fbf0d47303b7d68275d6720935e5116915418",
+                "reference": "372fbf0d47303b7d68275d6720935e5116915418",
                 "shasum": ""
             },
             "require": {
@@ -1613,7 +1615,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2017-02-21T10:30:50+00:00"
+            "time": "2017-09-05T23:21:05+00:00"
         },
         {
             "name": "yiisoft/yii2-faker",

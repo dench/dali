@@ -51,7 +51,6 @@ SiteAsset::register($this);
                         ['label' => 'Оформление праздников', 'url' => '/portfolio/celebration', 'active' => (Yii::$app->request->get('slug') == 'celebration')],
                         ['label' => 'Оформление мероприятий', 'url' => '/portfolio/events', 'active' => (Yii::$app->request->get('slug') == 'events')],
                         ['label' => 'Новогоднее оформление', 'url' => '/portfolio/new-year', 'active' => (Yii::$app->request->get('slug') == 'new-year')],
-                        ['label' => 'Оформление витрин', 'url' => '/portfolio/shop-window', 'active' => (Yii::$app->request->get('slug') == 'shop-window')],
                         ['label' => 'Озеленение', 'url' => '/portfolio/phytodesign', 'active' => (Yii::$app->request->get('slug') == 'phytodesign')],
                     ], 'active' => (Yii::$app->controller->id == 'portfolio')],
                     ['label' => 'Услуги', 'url' => ['/services'], 'items' => [
@@ -59,7 +58,6 @@ SiteAsset::register($this);
                         ['label' => 'Оформление праздников', 'url' => '/services/celebration-decoration', 'active' => (Yii::$app->request->get('slug') == 'celebration-decoration')],
                         ['label' => 'Оформление мероприятий', 'url' => '/services/events-decoration', 'active' => (Yii::$app->request->get('slug') == 'events-decoration')],
                         ['label' => 'Новогоднее оформление', 'url' => '/services/new-year-decoration', 'active' => (Yii::$app->request->get('slug') == 'new-year-decoration')],
-                        ['label' => 'Оформление витрин', 'url' => '/services/shop-window-decoration', 'active' => (Yii::$app->request->get('slug') == 'shop-window-decoration')],
                         ['label' => 'Озеленение', 'url' => '/services/phyto-decoration', 'active' => (Yii::$app->request->get('slug') == 'phyto-decoration')],
                     ], 'active' => (Yii::$app->controller->id == 'services')],
                     ['label' => 'Команда DaLi', 'url' => '/about', 'active' => (Yii::$app->request->get('slug') == 'about')],
