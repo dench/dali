@@ -589,12 +589,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dench/yii2-page.git",
-                "reference": "64e5c9b047cfc631ad4a103776b9b55fea925a24"
+                "reference": "9cbcb124e84f507490698eb8f558783911700be6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dench/yii2-page/zipball/64e5c9b047cfc631ad4a103776b9b55fea925a24",
-                "reference": "64e5c9b047cfc631ad4a103776b9b55fea925a24",
+                "url": "https://api.github.com/repos/dench/yii2-page/zipball/9cbcb124e84f507490698eb8f558783911700be6",
+                "reference": "9cbcb124e84f507490698eb8f558783911700be6",
                 "shasum": ""
             },
             "require": {
@@ -628,7 +628,7 @@
                 "page",
                 "yii2"
             ],
-            "time": "2017-08-14 17:28:28"
+            "time": "2017-09-10 16:06:48"
         },
         {
             "name": "dench/yii2-sortable",
