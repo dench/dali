@@ -60,6 +60,7 @@ SiteAsset::register($this);
                         ['label' => 'Новогоднее оформление', 'url' => '/services/new-year-decoration', 'active' => (Yii::$app->request->get('slug') == 'new-year-decoration')],
                         ['label' => 'Озеленение', 'url' => '/services/phyto-decoration', 'active' => (Yii::$app->request->get('slug') == 'phyto-decoration')],
                     ], 'active' => (Yii::$app->controller->id == 'services')],
+                    ['label' => 'Видео', 'url' => '/video', 'active' => (Yii::$app->controller->id == 'video')],
                     ['label' => 'Команда DaLi', 'url' => '/about', 'active' => (Yii::$app->request->get('slug') == 'about')],
                     ['label' => 'Контакты', 'url' => '/contacts', 'active' => (Yii::$app->controller->action->id == 'contacts')],
                     ['label' => 'Блог', 'url' => ['/blog'], 'active' => (Yii::$app->controller->id == 'blog')],

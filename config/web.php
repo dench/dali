@@ -39,6 +39,8 @@ $config = [
                 'project/<slug:[0-9a-z\-]+>' => 'portfolio/view',
                 'blog' => 'blog/index',
                 'blog/<slug:[0-9a-z\-]+>' => 'blog/view',
+                'video' => 'video/index',
+                'video/<slug:[0-9a-z\-]+>' => 'video/view',
                 'sitemap.xml' => 'sitemap/index',
             ],
         ],
