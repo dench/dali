@@ -35,7 +35,7 @@ class SiteController extends Controller
     {
         Page::viewPage(1);
 
-        $items = Page::find()->where(['home' => 1])->all();
+        $items = Page::find()->where(['!=', 'home', 0])->orderBy(['home' => SORT_ASC])->all();
 
         return $this->render('index', [
             'items' => $items,
