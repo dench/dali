@@ -2,6 +2,8 @@
 
 namespace app\models;
 
+use Yii;
+
 class User extends \yii\base\Object implements \yii\web\IdentityInterface
 {
     public $id;
@@ -10,22 +12,15 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
     public $authKey;
     public $accessToken;
 
-    private static $users = [
-        '101' => [
-            'id' => '101',
-            'username' => 'demo2',
-            'password' => 'demo2',
-            'authKey' => 'test101key',
-            'accessToken' => '101-token',
-        ],
-    ];
-
+    public static $users = [];
 
     /**
      * @inheritdoc
      */
     public static function findIdentity($id)
     {
+        if (empty(self::$users)) self::$users = Yii::$app->params['users'];
+
         return isset(self::$users[$id]) ? new static(self::$users[$id]) : null;
     }
 
@@ -34,6 +29,8 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
      */
     public static function findIdentityByAccessToken($token, $type = null)
     {
+        if (empty(self::$users)) self::$users = Yii::$app->params['users'];
+
         foreach (self::$users as $user) {
             if ($user['accessToken'] === $token) {
                 return new static($user);
@@ -51,6 +48,8 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
      */
     public static function findByUsername($username)
     {
+        if (empty(self::$users)) self::$users = Yii::$app->params['users'];
+
         foreach (self::$users as $user) {
             if (strcasecmp($user['username'], $username) === 0) {
                 return new static($user);

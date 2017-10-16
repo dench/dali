@@ -8,7 +8,7 @@ use yii\helpers\Url;
 
 ?>
 <div class="container">
-    <!--<h1><?= $this->params['page']->h1 ?></h1>-->
+    <!--<h1 class="title"><?= $this->params['page']->h1 ?></h1>-->
 
     <div class="row cards">
         <?php foreach ($items as $child) : ?>
