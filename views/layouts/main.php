@@ -89,13 +89,12 @@ SiteAsset::register($this);
         ]);
     }
     ?>
-
     <?= $content ?>
 </div>
 <footer class="footer">
     <div class="container">
         <div>
-            <?= Html::a('Портфолио', ['/portfolio']) ?> | <?= Html::a('Услуги', ['/services']) ?>
+            <p><b>Звоните нам:</b><br><i class="glyphicon glyphicon-earphone"></i>&nbsp; <?= Yii::$app->params['phone'] ?></p>
         </div>
         © <?= Yii::$app->name ?> 2017
     </div>
