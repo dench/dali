@@ -48,7 +48,7 @@ SiteAsset::register($this);
                 'items' => [
                     ['label' => 'Организация свадеб', 'url' => '/services/wedding-organization', 'active' => (Yii::$app->controller->id == 'blog')],
                     ['label' => 'Портфолио', 'url' => ['/portfolio'], 'items' => [
-                        ['label' => 'Организация свадеб', 'url' => '/services/wedding-organization', 'active' => (Yii::$app->request->get('slug') == 'wedding-organization')],
+                        ['label' => 'Организация свадеб', 'url' => '/portfolio/wedding-projects', 'active' => (Yii::$app->request->get('slug') == 'wedding-organization')],
                         ['label' => 'Оформление свадеб', 'url' => '/portfolio/wedding', 'active' => (Yii::$app->request->get('slug') == 'wedding')],
                         ['label' => 'Оформление праздников', 'url' => '/portfolio/celebration', 'active' => (Yii::$app->request->get('slug') == 'celebration')],
                         ['label' => 'Оформление мероприятий', 'url' => '/portfolio/events', 'active' => (Yii::$app->request->get('slug') == 'events')],
