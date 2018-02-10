@@ -11,6 +11,7 @@ return [
         'path' => dirname(__DIR__) . '/files',
     ],
     'image' => [
+        'extensions' => 'png, jpg',
         'path' => 'image',
         'jpeg_quality' => 100,
         'convert' => true,

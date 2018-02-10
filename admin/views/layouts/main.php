@@ -10,7 +10,6 @@
 /* @var $content string */
 
 use app\assets\AdminAsset;
-use app\assets\CommonAsset;
 use app\widgets\Alert;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
@@ -44,10 +43,8 @@ AdminAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => Yii::t('app', 'Pages'), 'url' => ['/admin/page/default/index']],
-            ['label' => Yii::t('app', 'Setting'), 'url' => '#', 'items' => [
-
-            ]],
-            ['label' => Yii::t('app', 'Home'), 'url' => ['/site/index']],
+            ['label' => Yii::t('app', 'Home'), 'url' => ['/admin/home/index']],
+            ['label' => Yii::t('app', 'Site'), 'url' => ['/site/index']],
         ],
     ]);
     NavBar::end();

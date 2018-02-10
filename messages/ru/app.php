@@ -2,8 +2,9 @@
 
 return [
     'Verification Code' => '',
-    'Name' => 'Ваше имя',
+    'Name' => 'Название',
     'Email' => 'Ваш E-mail',
     'Subject' => 'Заголовок',
     'Body' => 'Текст сообщения',
+    'Description' => 'Описание',
 ];

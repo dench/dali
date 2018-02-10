@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Home;
 use app\models\Page;
 use Yii;
 use yii\data\ActiveDataProvider;
@@ -33,12 +34,13 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        Page::viewPage(1);
+        $page = Page::viewPage(1);
 
-        $items = Page::find()->where(['!=', 'home', 0])->orderBy(['home' => SORT_ASC])->all();
+        $items = Home::find()->where(['enabled' => true])->orderBy(['position' => SORT_ASC])->all();
 
         return $this->render('index', [
             'items' => $items,
+            'page' => $page,
         ]);
     }
 

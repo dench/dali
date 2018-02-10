@@ -44,7 +44,10 @@ a {
 
 .site-logo {
   display: block;
-  padding: 40px 0;
+  padding: 40px 0 30px 0;
+  .slogan {
+    margin-top: 15px;
+  }
 }
 
 footer {
@@ -151,6 +154,7 @@ h1.title {
 .cards {
   margin: -6px;
   overflow: hidden;
+  padding-bottom: 40px;
 }
 
 .card {

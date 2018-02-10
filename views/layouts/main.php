@@ -7,7 +7,6 @@ use app\assets\SiteAsset;
 use yii\bootstrap\NavBar;
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
-use app\assets\CommonAsset;
 use yii\widgets\Breadcrumbs;
 
 SiteAsset::register($this);
@@ -30,6 +29,7 @@ SiteAsset::register($this);
         <div class="container text-center">
             <div  class="site-logo">
                 <a href="<?= Yii::$app->homeUrl ?>"><img src="/img/dali.png" alt="Da Li"></a>
+                <div class="slogan"><?= Yii::$app->params['slogan'] ?></div>
             </div>
             <?php
             NavBar::begin([
@@ -46,7 +46,9 @@ SiteAsset::register($this);
                     'class' => 'navbar-nav navbar-center',
                 ],
                 'items' => [
+                    ['label' => 'Организация свадеб', 'url' => ['/blog'], 'active' => (Yii::$app->controller->id == 'blog')],
                     ['label' => 'Портфолио', 'url' => ['/portfolio'], 'items' => [
+                        ['label' => 'Организация свадеб', 'url' => '/services/wedding-organization', 'active' => (Yii::$app->request->get('slug') == 'wedding-organization')],
                         ['label' => 'Оформление свадеб', 'url' => '/portfolio/wedding', 'active' => (Yii::$app->request->get('slug') == 'wedding')],
                         ['label' => 'Оформление праздников', 'url' => '/portfolio/celebration', 'active' => (Yii::$app->request->get('slug') == 'celebration')],
                         ['label' => 'Оформление мероприятий', 'url' => '/portfolio/events', 'active' => (Yii::$app->request->get('slug') == 'events')],
@@ -54,6 +56,7 @@ SiteAsset::register($this);
                         ['label' => 'Озеленение', 'url' => '/portfolio/phytodesign', 'active' => (Yii::$app->request->get('slug') == 'phytodesign')],
                     ], 'active' => (Yii::$app->controller->id == 'portfolio')],
                     ['label' => 'Услуги', 'url' => ['/services'], 'items' => [
+                        ['label' => 'Организация свадеб', 'url' => '/services/wedding-organization', 'active' => (Yii::$app->request->get('slug') == 'wedding-organization')],
                         ['label' => 'Оформление свадеб', 'url' => '/services/wedding-decoration', 'active' => (Yii::$app->request->get('slug') == 'wedding-decoration')],
                         ['label' => 'Оформление праздников', 'url' => '/services/celebration-decoration', 'active' => (Yii::$app->request->get('slug') == 'celebration-decoration')],
                         ['label' => 'Оформление мероприятий', 'url' => '/services/events-decoration', 'active' => (Yii::$app->request->get('slug') == 'events-decoration')],
@@ -61,7 +64,7 @@ SiteAsset::register($this);
                         ['label' => 'Озеленение', 'url' => '/services/phyto-decoration', 'active' => (Yii::$app->request->get('slug') == 'phyto-decoration')],
                     ], 'active' => (Yii::$app->controller->id == 'services')],
                     ['label' => 'Видео', 'url' => '/video', 'active' => (Yii::$app->controller->id == 'video')],
-                    ['label' => 'Команда DaLi', 'url' => '/about', 'active' => (Yii::$app->request->get('slug') == 'about')],
+                    ['label' => 'О нас', 'url' => '/about', 'active' => (Yii::$app->request->get('slug') == 'about')],
                     ['label' => 'Контакты', 'url' => '/contacts', 'active' => (Yii::$app->controller->action->id == 'contacts')],
                     ['label' => 'Блог', 'url' => ['/blog'], 'active' => (Yii::$app->controller->id == 'blog')],
                 ],
