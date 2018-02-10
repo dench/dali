@@ -46,7 +46,7 @@ SiteAsset::register($this);
                     'class' => 'navbar-nav navbar-center',
                 ],
                 'items' => [
-                    ['label' => 'Организация свадеб', 'url' => '/services/wedding-organization', 'active' => (Yii::$app->controller->id == 'blog')],
+                    ['label' => 'Организация свадеб', 'url' => '/services/wedding-organization', 'active' => (Yii::$app->controller->id == 'wedding-organization')],
                     ['label' => 'Портфолио', 'url' => ['/portfolio'], 'items' => [
                         ['label' => 'Организация свадеб', 'url' => '/portfolio/wedding-projects', 'active' => (Yii::$app->request->get('slug') == 'wedding-projects')],
                         ['label' => 'Озеленение', 'url' => '/portfolio/phytodesign', 'active' => (Yii::$app->request->get('slug') == 'phytodesign')],
