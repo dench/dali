@@ -11,9 +11,11 @@ use yii\helpers\Url;
         <h2><a href="<?= Url::to(['services/view', 'slug' => $model->slug]) ?>" class="card-photo"><?= $model->name ?></a></h2>
         <small><?= $model->description ?></small>
     </div>
+    <a href="<?= Url::to(['services/view', 'slug' => $model->slug]) ?>">
     <?php if ($model->image) : ?>
         <img src="<?= ImageHelper::thumb($model->image->id, 'cover') ?>" alt="<?= $model->image->alt ?>" class="img-responsive">
     <?php else : ?>
         <img src="<?= Yii::$app->params['image']['none'] ?>" class="img-responsive img-none">
     <?php endif; ?>
+    </a>
 </div>
