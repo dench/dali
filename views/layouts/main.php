@@ -48,20 +48,20 @@ SiteAsset::register($this);
                 'items' => [
                     ['label' => 'Организация свадеб', 'url' => '/services/wedding-organization', 'active' => (Yii::$app->controller->id == 'blog')],
                     ['label' => 'Портфолио', 'url' => ['/portfolio'], 'items' => [
-                        ['label' => 'Организация свадеб', 'url' => '/portfolio/wedding-projects', 'active' => (Yii::$app->request->get('slug') == 'wedding-organization')],
+                        ['label' => 'Организация свадеб', 'url' => '/portfolio/wedding-projects', 'active' => (Yii::$app->request->get('slug') == 'wedding-projects')],
+                        ['label' => 'Озеленение', 'url' => '/portfolio/phytodesign', 'active' => (Yii::$app->request->get('slug') == 'phytodesign')],
                         ['label' => 'Оформление свадеб', 'url' => '/portfolio/wedding', 'active' => (Yii::$app->request->get('slug') == 'wedding')],
                         ['label' => 'Оформление праздников', 'url' => '/portfolio/celebration', 'active' => (Yii::$app->request->get('slug') == 'celebration')],
                         ['label' => 'Оформление мероприятий', 'url' => '/portfolio/events', 'active' => (Yii::$app->request->get('slug') == 'events')],
                         ['label' => 'Новогоднее оформление', 'url' => '/portfolio/new-year', 'active' => (Yii::$app->request->get('slug') == 'new-year')],
-                        ['label' => 'Озеленение', 'url' => '/portfolio/phytodesign', 'active' => (Yii::$app->request->get('slug') == 'phytodesign')],
                     ], 'active' => (Yii::$app->controller->id == 'portfolio')],
                     ['label' => 'Услуги', 'url' => ['/services'], 'items' => [
                         ['label' => 'Организация свадеб', 'url' => '/services/wedding-organization', 'active' => (Yii::$app->request->get('slug') == 'wedding-organization')],
+                        ['label' => 'Озеленение', 'url' => '/services/phyto-decoration', 'active' => (Yii::$app->request->get('slug') == 'phyto-decoration')],
                         ['label' => 'Оформление свадеб', 'url' => '/services/wedding-decoration', 'active' => (Yii::$app->request->get('slug') == 'wedding-decoration')],
                         ['label' => 'Оформление праздников', 'url' => '/services/celebration-decoration', 'active' => (Yii::$app->request->get('slug') == 'celebration-decoration')],
                         ['label' => 'Оформление мероприятий', 'url' => '/services/events-decoration', 'active' => (Yii::$app->request->get('slug') == 'events-decoration')],
                         ['label' => 'Новогоднее оформление', 'url' => '/services/new-year-decoration', 'active' => (Yii::$app->request->get('slug') == 'new-year-decoration')],
-                        ['label' => 'Озеленение', 'url' => '/services/phyto-decoration', 'active' => (Yii::$app->request->get('slug') == 'phyto-decoration')],
                     ], 'active' => (Yii::$app->controller->id == 'services')],
                     ['label' => 'Видео', 'url' => '/video', 'active' => (Yii::$app->controller->id == 'video')],
                     ['label' => 'О нас', 'url' => '/about', 'active' => (Yii::$app->request->get('slug') == 'about')],
