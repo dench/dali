@@ -121,8 +121,10 @@ class Home extends ActiveRecord
         if (empty($this->link)) {
             if (in_array(2, $this->page->parent_ids)) {
                 return Url::to(['portfolio/category', 'slug' => $this->page->slug]);
-            } else {
+            } if (in_array(3, $this->page->parent_ids)) {
                 return Url::to(['services/view', 'slug' => $this->page->slug]);
+            } else {
+                return Url::to(['portfolio/view', 'slug' => $this->page->slug]);
             }
         }
     }
