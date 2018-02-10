@@ -99,7 +99,7 @@ SiteAsset::register($this);
         <div>
             <p><b>Звоните нам:</b><br><i class="glyphicon glyphicon-earphone"></i>&nbsp; <?= Yii::$app->params['phone'] ?></p>
         </div>
-        © <?= Yii::$app->name ?> 2017
+        © <?= Yii::$app->name ?> 2017 - <?= date('Y') ?>
     </div>
 </footer>
 <?= $this->render('_counters') ?>
