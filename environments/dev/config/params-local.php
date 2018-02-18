@@ -5,6 +5,11 @@ return [
     'supportEmail' => 'info@example.com',
 
     'phone' => '(099) 999-99-99',
+    'phone2' => '(099) 999-99-99',
+
+    'facebook' => '#',
+    'instagram' => '#',
+    'youtube' => '#',
 
     'users' => [
         '101' => [
