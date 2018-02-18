@@ -32,7 +32,6 @@ $config = [
                 '<slug:about>' => 'site/page',
                 'image/<size:[0-9a-z\-]+>/<name>.<extension:[a-z]+>' => 'image/default/index',
                 'portfolio/' => 'portfolio/index',
-                'portfolio/<slug:new-year>' => 'portfolio/view',
                 'portfolio/<slug:[0-9a-z\-]+>' => 'portfolio/category',
                 'project/<slug:[0-9a-z\-]+>' => 'portfolio/view',
                 'blog' => 'blog/index',

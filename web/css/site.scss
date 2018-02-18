@@ -240,6 +240,17 @@ h1.title {
   margin-bottom: 20px;
 }
 
+.reviews {
+  .media {
+    p:last-child {
+      margin: 0;
+    }
+    &-text {
+      margin-top: 10px;
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .navbar {
     border: none;

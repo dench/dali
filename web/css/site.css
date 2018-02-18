@@ -156,6 +156,11 @@ h1.title {
   overflow: hidden;
   margin-bottom: 20px; }
 
+.reviews .media p:last-child {
+  margin: 0; }
+.reviews .media-text {
+  margin-top: 10px; }
+
 @media (min-width: 768px) {
   .navbar {
     border: none; }

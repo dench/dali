@@ -43,8 +43,9 @@ AdminAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => Yii::t('app', 'Pages'), 'url' => ['/admin/page/default/index']],
-            ['label' => Yii::t('app', 'Home'), 'url' => ['/admin/home/index']],
-            ['label' => Yii::t('app', 'Block'), 'url' => ['/admin/block/default/index']],
+            ['label' => Yii::t('app', 'Home blocks'), 'url' => ['/admin/home/index']],
+            ['label' => Yii::t('app', 'Reviews'), 'url' => ['/admin/review/index']],
+            //['label' => Yii::t('app', 'Block'), 'url' => ['/admin/block/default/index']],
             ['label' => Yii::t('app', 'Site'), 'url' => ['/site/index']],
         ],
     ]);
