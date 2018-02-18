@@ -22,6 +22,7 @@
         "dench/yii2-page": "@dev",
         "dench/yii2-image": "@dev",
         "dench/yii2-sortable": "@dev",
+        "dench/yii2-block": "@dev",
         "2amigos/yii2-ckeditor-widget": "~2.0",
         "voskobovich/yii2-linker-behavior": "^4.0",
         "kartik-v/yii2-widget-fileinput": "@dev",

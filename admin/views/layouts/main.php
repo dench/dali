@@ -44,6 +44,7 @@ AdminAsset::register($this);
         'items' => [
             ['label' => Yii::t('app', 'Pages'), 'url' => ['/admin/page/default/index']],
             ['label' => Yii::t('app', 'Home'), 'url' => ['/admin/home/index']],
+            ['label' => Yii::t('app', 'Block'), 'url' => ['/admin/block/default/index']],
             ['label' => Yii::t('app', 'Site'), 'url' => ['/site/index']],
         ],
     ]);

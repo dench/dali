@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc45a4a73bc1f4719693f6f0f5fed563",
+    "content-hash": "543c1ee38b2ae07fb6529c7a46f9f073",
     "packages": [
         {
             "name": "2amigos/yii2-ckeditor-widget",
@@ -412,6 +412,49 @@
                 "wysiwyg"
             ],
             "time": "2017-09-13T13:09:47+00:00"
+        },
+        {
+            "name": "dench/yii2-block",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dench/yii2-block.git",
+                "reference": "8c2ca0e634a17e4e4bc81bb6d40a96f1ea44f87d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dench/yii2-block/zipball/8c2ca0e634a17e4e4bc81bb6d40a96f1ea44f87d",
+                "reference": "8c2ca0e634a17e4e4bc81bb6d40a96f1ea44f87d",
+                "shasum": ""
+            },
+            "require": {
+                "2amigos/yii2-ckeditor-widget": "~2.0",
+                "dench/yii2-language": "@dev",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "dench\\block\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Dench",
+                    "email": "dench@i.ua"
+                }
+            ],
+            "description": "Block",
+            "keywords": [
+                "block",
+                "extension",
+                "yii2"
+            ],
+            "time": "2017-08-14T15:36:27+00:00"
         },
         {
             "name": "dench/yii2-image",
@@ -1651,6 +1694,7 @@
         "dench/yii2-page": 20,
         "dench/yii2-image": 20,
         "dench/yii2-sortable": 20,
+        "dench/yii2-block": 20,
         "kartik-v/yii2-widget-fileinput": 20
     },
     "prefer-stable": false,

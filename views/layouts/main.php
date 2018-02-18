@@ -88,7 +88,11 @@ SiteAsset::register($this);
 <footer class="footer">
     <div class="container">
         <div>
-            <p><b>Звоните нам:</b><br><i class="glyphicon glyphicon-earphone"></i>&nbsp; <?= Yii::$app->params['phone'] ?></p>
+            <p>
+                <b>Звоните нам:</b><br>
+                <i class="glyphicon glyphicon-earphone"></i>&nbsp; <?= Yii::$app->params['phone'] ?><br>
+                <i class="glyphicon glyphicon-earphone"></i>&nbsp; <?= Yii::$app->params['phone2'] ?>
+            </p>
         </div>
         © <?= Yii::$app->name ?>
     </div>
