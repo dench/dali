@@ -2,13 +2,13 @@
 use yii\widgets\ListView;
 
 /** @var $this yii\web\View */
-/** @var $model app\models\Page */
+/** @var $page dench\page\models\Page */
 /** @var $dataProvider yii\data\ActiveDataProvider */
 ?>
 
 <div class="container">
-    <h1 class="title"><?= $model->h1 ?></h1>
-    <?= $model->text ?>
+    <h1 class="title"><?= $page->h1 ?></h1>
+    <?= $page->text ?>
 
     <?php
     echo ListView::widget([

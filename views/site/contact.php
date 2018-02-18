@@ -3,6 +3,7 @@
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model app\models\ContactForm */
+/* @var $page dench\page\models\Page */
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
@@ -10,7 +11,7 @@ use yii\captcha\Captcha;
 
 ?>
 <div class="container">
-    <h1 class="title"><?= $this->params['page']->h1 ?></h1>
+    <h1 class="title"><?= $page->h1 ?></h1>
 
     <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
 
@@ -20,7 +21,7 @@ use yii\captcha\Captcha;
 
     <?php else: ?>
 
-        <?= $this->params['page']->text ?>
+        <?= $page->text ?>
 
         <div class="row">
             <div class="col-sm-8">

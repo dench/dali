@@ -1,6 +1,6 @@
 <?php
 /** @var $this yii\web\View */
-/** @var $model app\models\Page */
+/** @var $model dench\page\models\Page */
 
 use dench\image\helpers\ImageHelper;
 use yii\helpers\Url;

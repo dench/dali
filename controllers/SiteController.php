@@ -3,9 +3,8 @@
 namespace app\controllers;
 
 use app\models\Home;
-use app\models\Page;
+use dench\page\models\Page;
 use Yii;
-use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use app\models\ContactForm;
 
@@ -34,7 +33,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $page = Page::viewPage(1);
+        $page = Page::viewPage(Yii::$app->params['page']['index']);
 
         $items = Home::find()->where(['enabled' => true])->orderBy(['position' => SORT_ASC])->all();
 
@@ -51,35 +50,10 @@ class SiteController extends Controller
      */
     public function actionPage($slug = null)
     {
-        Page::viewPage($slug);
+        $page = Page::viewPage($slug);
 
-        return $this->render('page');
-    }
-
-    /**
-     * Displays page.
-     *
-     * @return string
-     */
-    public function actionServices()
-    {
-        $model = Page::viewPage(3);
-
-        $dataProvider = new ActiveDataProvider([
-            'query' => $model->getChilds(),
-            'sort'=> [
-                'defaultOrder' => [
-                    'position' => SORT_ASC,
-                ],
-            ],
-            'pagination' => [
-                'defaultPageSize' => 9,
-            ],
-        ]);
-
-        return $this->render('services', [
-            'model' => $model,
-            'dataProvider' => $dataProvider,
+        return $this->render('page', [
+            'page' => $page,
         ]);
     }
 
@@ -90,7 +64,7 @@ class SiteController extends Controller
      */
     public function actionContacts()
     {
-        Page::viewPage(12);
+        $page = Page::viewPage(Yii::$app->params['page']['contacts']);
 
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
@@ -100,6 +74,7 @@ class SiteController extends Controller
         }
         return $this->render('contact', [
             'model' => $model,
+            'page' => $page,
         ]);
     }
 }

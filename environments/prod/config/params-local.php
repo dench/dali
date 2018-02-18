@@ -17,4 +17,13 @@ return [
     ],
 
     'slogan' => 'Slogan',
+
+    'page' => [
+        'index' => 0,
+        'blog' => 0,
+        'portfolio' => 0,
+        'reviews' => 0,
+        'contacts' => 0,
+        'video' => 0,
+    ],
 ];

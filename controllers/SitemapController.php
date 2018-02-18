@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-use app\models\Page;
+use dench\page\models\Page;
 use Yii;
 use yii\helpers\Url;
 use yii\web\Controller;
@@ -26,41 +26,55 @@ class SitemapController extends Controller
         ];
 
         $urls[] = [
-            'loc' => Url::to(['blog/index'], 'https'),
+            'loc' => Url::to(['site/page', 'slug' => 'about'], 'https'),
         ];
 
         $urls[] = [
-            'loc' => Url::to(['/portfolio'], 'https'),
+            'loc' => Url::to(['blog/index'], 'https'),
         ];
 
-        $model = Page::findOne(2);
+        if ($model = Page::findOne(Yii::$app->params['page']['blog'])) {
+            $childs = $model->getChilds()->where(['enabled' => 1])->all();
 
-        $childs = $model->getChilds()->where(['enabled' => 1])->all();
-
-        foreach ($childs as $child) {
-            $urls[] = [
-                'loc' => Url::to(['portfolio/category', 'slug' => $child->slug], 'https'),
-            ];
-            $projects = $child->getChilds()->where(['enabled' => 1])->all();
-            foreach ($projects as $project) {
+            foreach ($childs as $child) {
                 $urls[] = [
-                    'loc' => Url::to(['portfolio/view', 'slug' => $project->slug], 'https'),
+                    'loc' => Url::to(['blog/view', 'slug' => $child->slug], 'https'),
                 ];
             }
         }
 
         $urls[] = [
-            'loc' => Url::to(['/services'], 'https'),
+            'loc' => Url::to(['/portfolio'], 'https'),
         ];
 
-        $model = Page::findOne(3);
+        if ($model = Page::findOne(Yii::$app->params['page']['portfolio'])) {
+            $childs = $model->getChilds()->where(['enabled' => 1])->all();
 
-        $childs = $model->getChilds()->where(['enabled' => 1])->all();
+            foreach ($childs as $child) {
+                $urls[] = [
+                    'loc' => Url::to(['portfolio/category', 'slug' => $child->slug], 'https'),
+                ];
+                $projects = $child->getChilds()->where(['enabled' => 1])->all();
+                foreach ($projects as $project) {
+                    $urls[] = [
+                        'loc' => Url::to(['portfolio/view', 'slug' => $project->slug], 'https'),
+                    ];
+                }
+            }
+        }
 
-        foreach ($childs as $child) {
-            $urls[] = [
-                'loc' => Url::to(['services/view', 'slug' => $child->slug], 'https'),
-            ];
+        $urls[] = [
+            'loc' => Url::to(['video/index'], 'https'),
+        ];
+
+        if ($model = Page::findOne(Yii::$app->params['page']['video'])) {
+            $childs = $model->getChilds()->where(['enabled' => 1])->all();
+
+            foreach ($childs as $child) {
+                $urls[] = [
+                    'loc' => Url::to(['video/view', 'slug' => $child->slug], 'https'),
+                ];
+            }
         }
 
         return $this->renderPartial('index', [

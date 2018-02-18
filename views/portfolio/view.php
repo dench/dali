@@ -4,7 +4,7 @@ use app\assets\PhotoSwipe;
 use dench\image\helpers\ImageHelper;
 
 /** @var $this yii\web\View */
-/** @var $model app\models\Page */
+/** @var $page dench\page\models\Page */
 /** @var $back string */
 
 $this->params['breadcrumbs'][] = [
@@ -12,8 +12,8 @@ $this->params['breadcrumbs'][] = [
     'url' => ['portfolio/index'],
 ];
 $this->params['breadcrumbs'][] = [
-    'label' => $model->parent->name,
-    'url' => ['portfolio/category', 'slug' => $model->parent->slug],
+    'label' => $page->parent->name,
+    'url' => ['portfolio/category', 'slug' => $page->parent->slug],
 ];
 $this->params['breadcrumbs'][] = '';
 
@@ -25,12 +25,12 @@ JS;
 Yii::$app->view->registerJs($script, yii\web\View::POS_READY);
 ?>
 <div class="container">
-    <h1><?= $model->h1 ?></h1>
-    <?= $model->text ?>
+    <h1><?= $page->h1 ?></h1>
+    <?= $page->text ?>
 
     <div class="images">
-        <?php if (empty($model->childs)) : ?>
-            <?php foreach ($model->images as $image) : ?>
+        <?php if (empty($page->childs)) : ?>
+            <?php foreach ($page->images as $image) : ?>
                 <?php if ($image->width/$image->height < 1) : ?>
                     <a href="<?= ImageHelper::thumb($image->id, 'portrained') ?>" class="image col-xs-6" data-size="<?= Yii::$app->params['image']['size']['portrained']['width'] ?>x<?= Yii::$app->params['image']['size']['portrained']['height'] ?>">
                         <img src="<?= ImageHelper::thumb($image->id, 'portrained') ?>" alt="<?= $image->alt ?>" class="img-responsive">

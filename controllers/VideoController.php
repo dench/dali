@@ -3,16 +3,17 @@
 namespace app\controllers;
 
 use dench\page\models\Page;
+use Yii;
 use yii\data\ActiveDataProvider;
 
 class VideoController extends \yii\web\Controller
 {
     public function actionIndex()
     {
-        $model = Page::viewPage('video');
+        $page = Page::viewPage(Yii::$app->params['page']['video']);
 
         $dataProvider = new ActiveDataProvider([
-            'query' => $model->getChilds()->where(['enabled' => 1]),
+            'query' => $page->getChilds()->where(['enabled' => 1]),
             'sort'=> [
                 'defaultOrder' => [
                     'position' => SORT_ASC,
@@ -24,16 +25,18 @@ class VideoController extends \yii\web\Controller
         ]);
 
         return $this->render('index', [
-            'model' => $model,
+            'page' => $page,
             'dataProvider' => $dataProvider,
         ]);
     }
 
-    public function actionView($slug = null, $id = null)
+    public function actionView($slug = null)
     {
-        Page::viewPage($slug);
+        $page = Page::viewPage($slug);
 
-        return $this->render('view');
+        return $this->render('view', [
+            'page' => $page,
+        ]);
     }
 
 }

@@ -2,9 +2,9 @@
 
 /* @var $this yii\web\View */
 /* @var $items app\models\Home[] */
+/* @var $page dench\page\models\Page */
 
 use dench\image\helpers\ImageHelper;
-use yii\helpers\Url;
 
 ?>
 <div class="container">
@@ -27,6 +27,6 @@ use yii\helpers\Url;
         <?php endforeach; ?>
     </div>
 
-    <h1 class="title"><?= $this->params['page']->h1 ?></h1>
-    <?= $this->params['page']->text ?>
+    <h1 class="title"><?= $page->h1 ?></h1>
+    <?= $page->text ?>
 </div>

@@ -28,7 +28,7 @@ SiteAsset::register($this);
     <header>
         <div class="container text-center">
             <div  class="site-logo">
-                <a href="<?= Yii::$app->homeUrl ?>"><img src="/img/dali.png" alt="Da Li"></a>
+                <a href="<?= Yii::$app->homeUrl ?>"><img src="/img/dali.png" alt="<?= Yii::$app->name ?>"></a>
                 <div class="slogan"><?= Yii::$app->params['slogan'] ?></div>
             </div>
             <?php
@@ -46,27 +46,19 @@ SiteAsset::register($this);
                     'class' => 'navbar-nav navbar-center',
                 ],
                 'items' => [
-                    ['label' => 'Организация свадеб', 'url' => '/services/wedding-organization', 'active' => (Yii::$app->controller->id == 'wedding-organization')],
+                    ['label' => 'Организация свадеб', 'url' => '/portfolio/wedding-organization', 'active' => (Yii::$app->controller->id == 'wedding')],
                     ['label' => 'Портфолио', 'url' => ['/portfolio'], 'items' => [
-                        ['label' => 'Организация свадеб', 'url' => '/portfolio/wedding-projects', 'active' => (Yii::$app->request->get('slug') == 'wedding-projects')],
+                        ['label' => 'Организация свадеб', 'url' => '/portfolio/wedding-organization', 'active' => (Yii::$app->request->get('slug') == 'weddingorganization')],
                         ['label' => 'Озеленение', 'url' => '/portfolio/phytodesign', 'active' => (Yii::$app->request->get('slug') == 'phytodesign')],
-                        ['label' => 'Оформление свадеб', 'url' => '/portfolio/wedding', 'active' => (Yii::$app->request->get('slug') == 'wedding')],
+                        ['label' => 'Оформление свадеб', 'url' => '/portfolio/wedding-decorations', 'active' => (Yii::$app->request->get('slug') == 'wedding-decorations')],
                         ['label' => 'Оформление праздников', 'url' => '/portfolio/celebration', 'active' => (Yii::$app->request->get('slug') == 'celebration')],
                         ['label' => 'Оформление мероприятий', 'url' => '/portfolio/events', 'active' => (Yii::$app->request->get('slug') == 'events')],
                         ['label' => 'Новогоднее оформление', 'url' => '/portfolio/new-year', 'active' => (Yii::$app->request->get('slug') == 'new-year')],
                     ], 'active' => (Yii::$app->controller->id == 'portfolio')],
-                    ['label' => 'Услуги', 'url' => ['/services'], 'items' => [
-                        ['label' => 'Организация свадеб', 'url' => '/services/wedding-organization', 'active' => (Yii::$app->request->get('slug') == 'wedding-organization')],
-                        ['label' => 'Озеленение', 'url' => '/services/phyto-decoration', 'active' => (Yii::$app->request->get('slug') == 'phyto-decoration')],
-                        ['label' => 'Оформление свадеб', 'url' => '/services/wedding-decoration', 'active' => (Yii::$app->request->get('slug') == 'wedding-decoration')],
-                        ['label' => 'Оформление праздников', 'url' => '/services/celebration-decoration', 'active' => (Yii::$app->request->get('slug') == 'celebration-decoration')],
-                        ['label' => 'Оформление мероприятий', 'url' => '/services/events-decoration', 'active' => (Yii::$app->request->get('slug') == 'events-decoration')],
-                        ['label' => 'Новогоднее оформление', 'url' => '/services/new-year-decoration', 'active' => (Yii::$app->request->get('slug') == 'new-year-decoration')],
-                    ], 'active' => (Yii::$app->controller->id == 'services')],
                     ['label' => 'Видео', 'url' => '/video', 'active' => (Yii::$app->controller->id == 'video')],
                     ['label' => 'О нас', 'url' => '/about', 'active' => (Yii::$app->request->get('slug') == 'about')],
                     ['label' => 'Контакты', 'url' => '/contacts', 'active' => (Yii::$app->controller->action->id == 'contacts')],
-                    ['label' => 'Блог', 'url' => ['/blog'], 'active' => (Yii::$app->controller->id == 'blog')],
+                    ['label' => 'Отзывы', 'url' => ['/reviews'], 'active' => (Yii::$app->controller->id == 'reviews')],
                 ],
             ]);
             NavBar::end();

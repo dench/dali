@@ -1,13 +1,13 @@
 <?php
 /** @var $this yii\web\View */
-/** @var $model app\models\Page */
+/** @var $page dench\page\models\Page */
 /** @var $dataProvider yii\data\ActiveDataProvider */
 
 use yii\widgets\ListView;
 
 ?>
 <div class="container">
-    <h1 class="title"><?= $this->params['page']->h1 ?></h1>
+    <h1 class="title"><?= $page->h1 ?></h1>
 
     <?php
     echo ListView::widget([
@@ -20,5 +20,5 @@ use yii\widgets\ListView;
     ]);
     ?>
 
-    <?= $this->params['page']->text ?>
+    <?= $page->text ?>
 </div>
