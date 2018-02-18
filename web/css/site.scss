@@ -235,6 +235,11 @@ h1.title {
   }
 }
 
+.images {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
 @media (min-width: 768px) {
   .navbar {
     border: none;

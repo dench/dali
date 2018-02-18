@@ -152,6 +152,10 @@ h1.title {
 .blog img {
   margin: 4px 2px; }
 
+.images {
+  overflow: hidden;
+  margin-bottom: 20px; }
+
 @media (min-width: 768px) {
   .navbar {
     border: none; }
