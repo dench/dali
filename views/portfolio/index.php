@@ -8,7 +8,8 @@ use yii\widgets\ListView;
 
 <div class="container">
     <h1 class="title"><?= $page->h1 ?></h1>
-    <?= $page->text ?>
+
+    <?= $page->short ?>
 
     <?php
     echo ListView::widget([
@@ -23,4 +24,6 @@ use yii\widgets\ListView;
         ],
     ]);
     ?>
+
+    <?= $page->text ?>
 </div>

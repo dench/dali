@@ -13,7 +13,8 @@ $this->params['breadcrumbs'][] = '';
 ?>
 <div class="container">
     <h1><?= $page->h1 ?></h1>
-    <?= $page->text ?>
+
+    <?= $page->short ?>
 
     <?php
     echo ListView::widget([
@@ -25,4 +26,6 @@ $this->params['breadcrumbs'][] = '';
         ],
     ]);
     ?>
+
+    <?= $page->text ?>
 </div>

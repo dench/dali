@@ -26,7 +26,8 @@ Yii::$app->view->registerJs($script, yii\web\View::POS_READY);
 ?>
 <div class="container">
     <h1><?= $page->h1 ?></h1>
-    <?= $page->text ?>
+
+    <?= $page->short ?>
 
     <div class="images">
         <?php if (empty($page->childs)) : ?>
@@ -43,6 +44,8 @@ Yii::$app->view->registerJs($script, yii\web\View::POS_READY);
             <?php endforeach; ?>
         <?php endif; ?>
     </div>
+
+    <?= $page->text ?>
 </div>
 
 

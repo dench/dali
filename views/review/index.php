@@ -4,5 +4,6 @@
 ?>
 <div class="container">
     <h1 class="title"><?= $page->h1 ?></h1>
+    <?= $page->short ?>
     <?= $page->text ?>
 </div>

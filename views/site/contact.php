@@ -21,7 +21,7 @@ use yii\captcha\Captcha;
 
     <?php else: ?>
 
-        <?= $page->text ?>
+        <?= $page->short ?>
 
         <div class="row">
             <div class="col-sm-8">
@@ -46,6 +46,8 @@ use yii\captcha\Captcha;
 
             </div>
         </div>
+
+        <?= $page->text ?>
 
     <?php endif; ?>
 </div>

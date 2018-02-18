@@ -8,6 +8,9 @@ use dench\image\helpers\ImageHelper;
 
 ?>
 <div class="container">
+
+    <?= $page->short ?>
+
     <div class="row cards">
         <?php foreach ($items as $item) : ?>
             <div class="col-xs-12 col-sm-6 col-md-4 card block-link">
@@ -28,5 +31,6 @@ use dench\image\helpers\ImageHelper;
     </div>
 
     <h1 class="title"><?= $page->h1 ?></h1>
+
     <?= $page->text ?>
 </div>

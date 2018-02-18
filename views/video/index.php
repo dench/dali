@@ -9,6 +9,8 @@ use yii\widgets\ListView;
 <div class="container">
     <h1 class="title"><?= $page->h1 ?></h1>
 
+    <?= $page->short ?>
+
     <?php
     echo ListView::widget([
         'dataProvider' => $dataProvider,

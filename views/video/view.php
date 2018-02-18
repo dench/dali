@@ -10,6 +10,6 @@ $this->params['breadcrumbs'][] = '';
 ?>
 <div class="container blog">
     <h1><?= $page->h1 ?></h1>
-
+    <?= $page->short ?>
     <?= $page->text ?>
 </div>
