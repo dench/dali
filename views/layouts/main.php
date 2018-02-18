@@ -89,9 +89,15 @@ SiteAsset::register($this);
     <div class="container">
         <div>
             <p>
-                <b>Звоните нам:</b><br>
+                <div><b>Звоните нам:</b></div>
                 <i class="glyphicon glyphicon-earphone"></i>&nbsp; <?= Yii::$app->params['phone'] ?><br>
                 <i class="glyphicon glyphicon-earphone"></i>&nbsp; <?= Yii::$app->params['phone2'] ?>
+            </p>
+            <p>
+                <div><b>Мы в социальных сетях:</b></div>
+                <a href="<?= Yii::$app->params['instagram'] ?>" class="btn btn-link" target="_blank"><img src="/img/instagram.svg" width="32"></a>
+                <a href="<?= Yii::$app->params['facebook'] ?>" class="btn btn-link" target="_blank"><img src="/img/facebook.svg" width="32"></a>
+                <a href="<?= Yii::$app->params['youtube'] ?>" class="btn btn-link" target="_blank"><img src="/img/youtube.svg" width="32"></a>
             </p>
         </div>
         © <?= Yii::$app->name ?>
