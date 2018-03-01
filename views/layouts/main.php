@@ -28,7 +28,7 @@ SiteAsset::register($this);
     <header>
         <div class="container text-center">
             <div  class="site-logo">
-                <a href="<?= Yii::$app->homeUrl ?>"><img src="/img/dali.png" alt="<?= Yii::$app->name ?>"></a>
+                <a href="<?= Yii::$app->homeUrl ?>"><img src="/img/bolgarina.png" alt="<?= Yii::$app->name ?>"></a>
                 <div class="slogan"><?= Yii::$app->params['slogan'] ?></div>
             </div>
             <?php
