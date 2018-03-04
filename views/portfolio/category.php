@@ -16,14 +16,6 @@ $this->params['breadcrumbs'][] = '';
 if (Yii::$app->request->get('page') == 1) {
     $this->registerLinkTag(['rel' => 'canonical', 'href' => Url::canonical()]);
 }
-
-echo $dataProvider->pagination->getPage(false);
-//if ($dataProvider->pagination->page < $dataProvider->pagination->pageCount) {
-    //$this->registerLinkTag(['rel' => 'next', 'href' => Url::current(['page' => $dataProvider->pagination->page + 1])]);
-//}
-//if ($dataProvider->pagination->page > 1) {
-    //$this->registerLinkTag(['rel' => 'prev', 'href' => Url::current(['page' => $dataProvider->pagination->page - 1])]);
-//}
 ?>
 <div class="container">
     <h1><?= $page->h1 ?></h1>
@@ -44,3 +36,12 @@ echo $dataProvider->pagination->getPage(false);
     <?= $page->text ?>
     <?php endif; ?>
 </div>
+
+<?php
+echo $dataProvider->pagination->page;
+//if ($dataProvider->pagination->page < $dataProvider->pagination->pageCount) {
+//$this->registerLinkTag(['rel' => 'next', 'href' => Url::current(['page' => $dataProvider->pagination->page + 1])]);
+//}
+//if ($dataProvider->pagination->page > 1) {
+//$this->registerLinkTag(['rel' => 'prev', 'href' => Url::current(['page' => $dataProvider->pagination->page - 1])]);
+//}
