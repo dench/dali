@@ -17,7 +17,7 @@ if (Yii::$app->request->get('page') == 1) {
     $this->registerLinkTag(['rel' => 'canonical', 'href' => Url::canonical()]);
 }
 
-echo $dataProvider->pagination->getPage();
+echo $dataProvider->pagination->getPage(true);
 //if ($dataProvider->pagination->page < $dataProvider->pagination->pageCount) {
     //$this->registerLinkTag(['rel' => 'next', 'href' => Url::current(['page' => $dataProvider->pagination->page + 1])]);
 //}
