@@ -27,7 +27,6 @@ use yii\helpers\Url;
                 <?= $model->name ?>
             <?php endif; ?>
         </h4>
-        <small class="text-muted"><?= Yii::$app->formatter->asDate($model->created_at) ?></small>
         <?php if ($model->page_id) : ?>
             <div class="media-text">
                 <a href="<?= Url::to(['portfolio/view', 'slug' => $model->page->slug]) ?>"><?= $model->page->name ?></a>
