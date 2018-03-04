@@ -1,4 +1,6 @@
 <?php
+
+use yii\helpers\Url;
 use yii\widgets\ListView;
 
 /** @var $this yii\web\View */
@@ -10,6 +12,10 @@ $this->params['breadcrumbs'][] = [
     'url' => ['portfolio/index'],
 ];
 $this->params['breadcrumbs'][] = '';
+
+if (Yii::$app->request->get('page')) {
+    $this->registerLinkTag(['rel' => 'canonical', 'href' => Url::canonical()]);
+}
 ?>
 <div class="container">
     <h1><?= $page->h1 ?></h1>
