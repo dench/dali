@@ -12,10 +12,6 @@ $this->params['breadcrumbs'][] = [
     'url' => ['portfolio/index'],
 ];
 $this->params['breadcrumbs'][] = '';
-
-if (Yii::$app->request->get('page') == 1) {
-    $this->registerLinkTag(['rel' => 'canonical', 'href' => Url::canonical()]);
-}
 ?>
 <div class="container">
     <h1><?= $page->h1 ?></h1>
@@ -44,4 +40,7 @@ if ($currentPage < $dataProvider->pagination->pageCount) {
 }
 if ($currentPage > 1) {
     $this->registerLinkTag(['rel' => 'prev', 'href' => Url::current(['page' => $currentPage - 1])]);
+}
+if ($currentPage == 1) {
+    $this->registerLinkTag(['rel' => 'canonical', 'href' => Url::canonical()]);
 }
