@@ -26,6 +26,7 @@ $this->params['breadcrumbs'][] = '';
         ],
     ]);
     ?>
-
+    <?php if (Yii::$app->request->get('page') < 2): ?>
     <?= $page->text ?>
+    <?php endif; ?>
 </div>
