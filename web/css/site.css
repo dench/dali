@@ -160,6 +160,9 @@ h1.title {
   margin: 0; }
 .reviews .media-text {
   margin-top: 10px; }
+.reviews .media-heading a img {
+  margin-top: -5px;
+  width: 16px; }
 
 @media (min-width: 768px) {
   .navbar {

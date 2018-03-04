@@ -248,6 +248,14 @@ h1.title {
     &-text {
       margin-top: 10px;
     }
+    &-heading {
+      a {
+        img {
+          margin-top: -5px;
+          width: 16px;
+        }
+      }
+    }
   }
 }
 

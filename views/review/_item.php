@@ -22,7 +22,7 @@ use yii\helpers\Url;
         </div>
         <h4 class="media-heading">
             <?php if ($model->link) : ?>
-                <a href="<?= $model->link ?>"><?= $model->name ?></a>
+                <a href="<?= $model->link ?>" target="_blank"><img src="/img/facebook.svg"> <?= $model->name ?></a>
             <?php else: ?>
                 <?= $model->name ?>
             <?php endif; ?>
