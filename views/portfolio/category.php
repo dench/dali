@@ -38,10 +38,10 @@ if (Yii::$app->request->get('page') == 1) {
 </div>
 
 <?php
-echo $dataProvider->pagination->page;
-//if ($dataProvider->pagination->page < $dataProvider->pagination->pageCount) {
-//$this->registerLinkTag(['rel' => 'next', 'href' => Url::current(['page' => $dataProvider->pagination->page + 1])]);
-//}
-//if ($dataProvider->pagination->page > 1) {
-//$this->registerLinkTag(['rel' => 'prev', 'href' => Url::current(['page' => $dataProvider->pagination->page - 1])]);
-//}
+$currentPage = $dataProvider->pagination->page + 1;
+if ($currentPage < $dataProvider->pagination->pageCount) {
+    $this->registerLinkTag(['rel' => 'next', 'href' => Url::current(['page' => $currentPage + 1])]);
+}
+if ($currentPage > 1) {
+    $this->registerLinkTag(['rel' => 'prev', 'href' => Url::current(['page' => $currentPage - 1])]);
+}
