@@ -35,11 +35,11 @@ $this->params['breadcrumbs'][] = '';
 
 <?php
 $currentPage = $dataProvider->pagination->page + 1;
-if ($currentPage < $dataProvider->pagination->pageCount) {
-    $this->registerLinkTag(['rel' => 'next', 'href' => Url::current(['page' => $currentPage + 1])]);
-}
 if ($currentPage > 1) {
     $this->registerLinkTag(['rel' => 'prev', 'href' => Url::current(['page' => $currentPage - 1])]);
+}
+if ($currentPage < $dataProvider->pagination->pageCount) {
+    $this->registerLinkTag(['rel' => 'next', 'href' => Url::current(['page' => $currentPage + 1])]);
 }
 if ($currentPage == 1) {
     $this->registerLinkTag(['rel' => 'canonical', 'href' => Url::canonical()]);
