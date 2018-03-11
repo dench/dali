@@ -23,4 +23,7 @@ return [
     'Site' => 'Сайт',
     'Home blocks' => 'Блоки на главной',
     'Create review' => 'Создать отзыв',
+    'Update review: {nameAttribute}' => 'Редактировать отзыв: {nameAttribute}',
+    'Create block' => 'Создать блок',
+    'Update block: {nameAttribute}' => 'Редактировать блок {nameAttribute}',
 ];

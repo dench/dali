@@ -6,8 +6,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Home */
 
-$this->title = Yii::t('app', 'Create Home');
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Homes'), 'url' => ['index']];
+$this->title = Yii::t('app', 'Create block');
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Home blocks'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="home-create">

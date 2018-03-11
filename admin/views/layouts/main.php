@@ -30,6 +30,9 @@ AdminAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
+<?php if (Yii::$app->user->isGuest): ?>
+    <?= $content ?>
+<?php else: ?>
 <div class="wrap">
     <?php
     NavBar::begin([
@@ -71,7 +74,7 @@ AdminAsset::register($this);
             </div>
             <div class="col-md-4 text-center">
                 <div class="copyright">
-                    © DaLi 2017
+                    © <?= Yii::$app->name ?> <?= date("Y") ?>
                 </div>
             </div>
             <div class="col-md-4">
@@ -80,6 +83,7 @@ AdminAsset::register($this);
         </div>
     </div>
 </footer>
+<?php endif; ?>
 <?php $this->endBody() ?>
 </body>
 </html>

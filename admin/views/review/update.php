@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Review */
 
-$this->title = Yii::t('app', 'Update Review: {nameAttribute}', [
+$this->title = Yii::t('app', 'Update review: {nameAttribute}', [
     'nameAttribute' => $model->name,
 ]);
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Reviews'), 'url' => ['index']];
