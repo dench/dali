@@ -126,5 +126,25 @@ class Home extends ActiveRecord
                 return Url::to(['portfolio/view', 'slug' => $this->page->slug]);
             }
         }
+        return '';
+    }
+
+    /**
+     * @return Home[]
+     */
+    public static function findEnabled()
+    {
+        return Yii::$app->cache->getOrSet('home_blocks-' . Yii::$app->language, function () {
+            return self::find()->where(['enabled' => true])->orderBy(['position' => SORT_ASC])->all();
+        });
+    }
+
+    public function afterSave($insert, $changedAttributes)
+    {
+        Yii::$app->cache->delete('home_blocks-' . Yii::$app->language);
+
+        Yii::$app->cache->delete('_home_blocks_view-' . Yii::$app->language);
+
+        parent::afterSave($insert, $changedAttributes);
     }
 }

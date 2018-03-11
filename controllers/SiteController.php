@@ -35,7 +35,7 @@ class SiteController extends Controller
     {
         $page = Page::viewPage(Yii::$app->params['page']['index']);
 
-        $items = Home::find()->where(['enabled' => true])->orderBy(['position' => SORT_ASC])->all();
+        $items = Home::findEnabled();
 
         return $this->render('index', [
             'items' => $items,

@@ -548,12 +548,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dench/yii2-page.git",
-                "reference": "f722289415cfcd3503f8032263f269cc61aefde0"
+                "reference": "f8f78ca5bedae874238e3a3e991b52beacdf8919"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dench/yii2-page/zipball/f722289415cfcd3503f8032263f269cc61aefde0",
-                "reference": "f722289415cfcd3503f8032263f269cc61aefde0",
+                "url": "https://api.github.com/repos/dench/yii2-page/zipball/f8f78ca5bedae874238e3a3e991b52beacdf8919",
+                "reference": "f8f78ca5bedae874238e3a3e991b52beacdf8919",
                 "shasum": ""
             },
             "require": {
@@ -587,7 +587,7 @@
                 "page",
                 "yii2"
             ],
-            "time": "2018-02-18T13:04:00+00:00"
+            "time": "2018-03-11T13:19:38+00:00"
         },
         {
             "name": "dench/yii2-sortable",
@@ -639,16 +639,16 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.9.3",
+            "version": "v4.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "95e1bae3182efc0f3422896a3236e991049dac69"
+                "reference": "d85d39da4576a6934b72480be6978fb10c860021"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/95e1bae3182efc0f3422896a3236e991049dac69",
-                "reference": "95e1bae3182efc0f3422896a3236e991049dac69",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/d85d39da4576a6934b72480be6978fb10c860021",
+                "reference": "d85d39da4576a6934b72480be6978fb10c860021",
                 "shasum": ""
             },
             "require": {
@@ -682,27 +682,28 @@
             "keywords": [
                 "html"
             ],
-            "time": "2017-06-03T02:28:16+00:00"
+            "time": "2018-02-23T01:58:20+00:00"
         },
         {
             "name": "imagine/imagine",
-            "version": "v0.6.3",
+            "version": "v0.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/avalanche123/Imagine.git",
-                "reference": "149041d2a1b517107bfe270ca2b1a17aa341715d"
+                "reference": "a9a702a946073cbca166718f1b02a1e72d742daa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/149041d2a1b517107bfe270ca2b1a17aa341715d",
-                "reference": "149041d2a1b517107bfe270ca2b1a17aa341715d",
+                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/a9a702a946073cbca166718f1b02a1e72d742daa",
+                "reference": "a9a702a946073cbca166718f1b02a1e72d742daa",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
             "require-dev": {
-                "sami/sami": "dev-master"
+                "sami/sami": "^3.3",
+                "symfony/phpunit-bridge": "^3.2"
             },
             "suggest": {
                 "ext-gd": "to use the GD implementation",
@@ -739,7 +740,7 @@
                 "image manipulation",
                 "image processing"
             ],
-            "time": "2015-09-19T16:54:05+00:00"
+            "time": "2017-05-16T10:31:22+00:00"
         },
         {
             "name": "kartik-v/bootstrap-fileinput",
@@ -1057,16 +1058,16 @@
         },
         {
             "name": "voskobovich/yii2-linker-behavior",
-            "version": "4.0.2",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voskobovich/yii2-linker-behavior.git",
-                "reference": "4eafb2335eb546df1c1915a0d7468c0d1f7df2f9"
+                "reference": "084251e89514464eb30f9d312983776dd50bcf88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voskobovich/yii2-linker-behavior/zipball/4eafb2335eb546df1c1915a0d7468c0d1f7df2f9",
-                "reference": "4eafb2335eb546df1c1915a0d7468c0d1f7df2f9",
+                "url": "https://api.github.com/repos/voskobovich/yii2-linker-behavior/zipball/084251e89514464eb30f9d312983776dd50bcf88",
+                "reference": "084251e89514464eb30f9d312983776dd50bcf88",
                 "shasum": ""
             },
             "require": {
@@ -1075,7 +1076,9 @@
             },
             "require-dev": {
                 "codeception/codeception": "*",
-                "yiisoft/yii2-codeception": "^2"
+                "friendsofphp/php-cs-fixer": "^2",
+                "yiisoft/yii2-codeception": "~2.0.0",
+                "yiisoft/yii2-coding-standards": "~2.0.2"
             },
             "type": "yii2-behavior",
             "autoload": {
@@ -1112,20 +1115,20 @@
                 "relations",
                 "yii2"
             ],
-            "time": "2017-02-26T08:12:40+00:00"
+            "time": "2017-12-01T15:06:34+00:00"
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.13.1",
+            "version": "2.0.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "7af96d8da5ea3e9a5dd05d0e734b21c5726a6ddf"
+                "reference": "d99969394c66dc3606134af092b8ec561ea5d7c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/7af96d8da5ea3e9a5dd05d0e734b21c5726a6ddf",
-                "reference": "7af96d8da5ea3e9a5dd05d0e734b21c5726a6ddf",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/d99969394c66dc3606134af092b8ec561ea5d7c6",
+                "reference": "d99969394c66dc3606134af092b8ec561ea5d7c6",
                 "shasum": ""
             },
             "require": {
@@ -1212,7 +1215,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-11-14T11:08:21+00:00"
+            "time": "2018-02-24T20:23:06+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -1326,20 +1329,20 @@
         },
         {
             "name": "yiisoft/yii2-imagine",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-imagine.git",
-                "reference": "59dcd0b43c2b0e5495c7e5c0320e2cbc1cd57411"
+                "reference": "a8a1a068862a86e3395e665bc86e63d5c9b60841"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-imagine/zipball/59dcd0b43c2b0e5495c7e5c0320e2cbc1cd57411",
-                "reference": "59dcd0b43c2b0e5495c7e5c0320e2cbc1cd57411",
+                "url": "https://api.github.com/repos/yiisoft/yii2-imagine/zipball/a8a1a068862a86e3395e665bc86e63d5c9b60841",
+                "reference": "a8a1a068862a86e3395e665bc86e63d5c9b60841",
                 "shasum": ""
             },
             "require": {
-                "imagine/imagine": "~0.6.0",
+                "imagine/imagine": "~0.6.0 | ~0.7.1",
                 "yiisoft/yii2": "~2.0.0"
             },
             "type": "yii2-extension",
@@ -1350,7 +1353,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "yii\\imagine\\": ""
+                    "yii\\imagine\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1370,7 +1373,7 @@
                 "imagine",
                 "yii2"
             ],
-            "time": "2016-11-03T19:28:39+00:00"
+            "time": "2018-02-22T11:57:06+00:00"
         },
         {
             "name": "yiisoft/yii2-swiftmailer",
@@ -1588,21 +1591,21 @@
         },
         {
             "name": "yiisoft/yii2-faker",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-faker.git",
-                "reference": "b88ca69ee226a3610b2c26c026c3203d7ac50f6c"
+                "reference": "3df62b1dcb272a8413f9c6e532c9d73f325ccde1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-faker/zipball/b88ca69ee226a3610b2c26c026c3203d7ac50f6c",
-                "reference": "b88ca69ee226a3610b2c26c026c3203d7ac50f6c",
+                "url": "https://api.github.com/repos/yiisoft/yii2-faker/zipball/3df62b1dcb272a8413f9c6e532c9d73f325ccde1",
+                "reference": "3df62b1dcb272a8413f9c6e532c9d73f325ccde1",
                 "shasum": ""
             },
             "require": {
-                "fzaninotto/faker": "*",
-                "yiisoft/yii2": "*"
+                "fzaninotto/faker": "~1.4",
+                "yiisoft/yii2": "~2.0.0"
             },
             "type": "yii2-extension",
             "extra": {
@@ -1631,7 +1634,7 @@
                 "faker",
                 "yii2"
             ],
-            "time": "2015-03-01T06:22:44+00:00"
+            "time": "2018-02-19T20:27:10+00:00"
         },
         {
             "name": "yiisoft/yii2-gii",
