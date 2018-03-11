@@ -48,6 +48,11 @@ class HomeController extends Controller
     {
         $dataProvider = new ActiveDataProvider([
             'query' => Home::find(),
+            'sort'=> [
+                'defaultOrder' => [
+                    'position' => SORT_ASC,
+                ],
+            ],
         ]);
 
         return $this->render('index', [
