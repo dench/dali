@@ -4,7 +4,9 @@
 /* @var $items app\models\Home[] */
 /* @var $page dench\page\models\Page */
 
+
 ?>
+
 <div class="container">
 
     <?= $page->short ?>

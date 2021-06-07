@@ -30,24 +30,51 @@ footer {
     color: #000; }
     footer a:hover, footer a:focus {
       color: #AAA; }
+  footer .container{
+    border-top: 1px solid #DDD; 
+  }
 
 h1, .h1, h2, .h2 {
   font-family: 'Lora', serif;
   font-weight: 300;
-  text-transform: uppercase; }
+  text-transform: uppercase; 
+
+}
+h3{
+  font-family: 'Lora', serif;
+  font-weight: 300;
+}
 
 h1, .h1 {
-  font-size: 18px; }
+  font-size: 20px; }
 
 h2, .h2 {
-  font-size: 16px; }
+  font-size: 18px;
+  color: #1E860D; }
 
 h3, .h3 {
-  font-size: 14px; }
+  font-size: 16px; }
 
-h1.title {
-  margin: 0 0 20px 0; }
-
+h1.title, h1 {
+  margin: 0 0 20px 0; 
+  text-align: center;
+}
+h1{
+  margin: 10px 0 20px 0;
+}
+h1.title:after,
+h1:after{
+  content: '';
+  display: block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 150px;
+  height: 2px;
+  background: #1E860D;
+  border: solid #FFF;
+  border-width: 0 10px;
+  margin: 10px auto;
+}
 .navbar-brand {
   font-size: 28px;
   line-height: 24px;
@@ -58,7 +85,7 @@ h1.title {
   color: #000;
   text-transform: uppercase; }
   .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
-    color: #AAA;
+    color: #1E860D;
     background-color: transparent; }
 
 .dropdown-menu {
@@ -73,7 +100,7 @@ h1.title {
     background-color: transparent; }
     .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
       text-decoration: none;
-      color: #AAA;
+      color: #1E860D;
       background-color: transparent; }
   .dropdown-menu .active > a {
     color: #AAA;
@@ -213,3 +240,27 @@ h1.title {
     width: 840px; } }
 
 /*# sourceMappingURL=site.css.map */
+.navbar-nav > li:nth-child(7) > a {
+  font-size: 19px;
+  color: #DDD;
+  background: #1E860D;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.navbar-nav > li:nth-child(7) > a:hover{
+	color: #1E860D;
+	background: #DDD;
+}
+ul.mainpage-list{
+  /*list-style: none;*/
+  list-style-image: url('../img/list.png');
+}
+/*ul.mainpage-list li::before {
+    content: "";
+    font-weight: 600;
+    color: #1E860D;
+    margin-right: 10px;
+    font-size: 18px;
+
+    background-image: url('../img/list.png');
+}*/
